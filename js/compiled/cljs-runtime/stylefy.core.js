@@ -51,8 +51,8 @@ goog.provide('stylefy.core');
  * Options is an optional map, which contains HTML attributes (:class, :href, :src etc.).
  */
 stylefy.core.use_style = (function stylefy$core$use_style(var_args){
-var G__55449 = arguments.length;
-switch (G__55449) {
+var G__55451 = arguments.length;
+switch (G__55451) {
 case 1:
 return stylefy.core.use_style.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -207,8 +207,8 @@ return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__55469,seq55468
  *                            This value is also used as suffix in caching.
  */
 stylefy.core.init = (function stylefy$core$init(var_args){
-var G__55474 = arguments.length;
-switch (G__55474) {
+var G__55471 = arguments.length;
+switch (G__55471) {
 case 0:
 return stylefy.core.init.cljs$core$IFn$_invoke$arity$0();
 
@@ -299,11 +299,11 @@ return null;
 (stylefy.core.keyframes.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(stylefy.core.keyframes.cljs$lang$applyTo = (function (seq55476){
-var G__55477 = cljs.core.first(seq55476);
-var seq55476__$1 = cljs.core.next(seq55476);
+(stylefy.core.keyframes.cljs$lang$applyTo = (function (seq55475){
+var G__55476 = cljs.core.first(seq55475);
+var seq55475__$1 = cljs.core.next(seq55475);
 var self__4723__auto__ = this;
-return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__55477,seq55476__$1);
+return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__55476,seq55475__$1);
 }));
 
 /**
