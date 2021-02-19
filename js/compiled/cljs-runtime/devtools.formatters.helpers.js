@@ -2,8 +2,8 @@ goog.provide('devtools.formatters.helpers');
 devtools.formatters.helpers.pref = (function devtools$formatters$helpers$pref(v){
 while(true){
 if((v instanceof cljs.core.Keyword)){
-var G__23489 = devtools.prefs.pref(v);
-v = G__23489;
+var G__23492 = devtools.prefs.pref(v);
+v = G__23492;
 continue;
 } else {
 return v;
@@ -48,7 +48,7 @@ return false;
 } else {
 return cljs.core.native_satisfies_QMARK_(cljs.core.IPrintWithWriter,value);
 }
-}catch (e23469){var _e__20630__auto__ = e23469;
+}catch (e23469){var _e__20719__auto__ = e23469;
 return false;
 }})();
 if(cljs.core.truth_(or__4126__auto__)){
@@ -67,7 +67,7 @@ return false;
 } else {
 return cljs.core.native_satisfies_QMARK_(devtools.format.IDevtoolsFormat,value);
 }
-}catch (e23474){var _e__20630__auto__ = e23474;
+}catch (e23474){var _e__20719__auto__ = e23474;
 return false;
 }})();
 if(cljs.core.truth_(or__4126__auto____$1)){
@@ -86,7 +86,7 @@ return false;
 } else {
 return cljs.core.native_satisfies_QMARK_(devtools.protocols.IFormat,value);
 }
-}catch (e23476){var _e__20630__auto__ = e23476;
+}catch (e23476){var _e__20719__auto__ = e23476;
 return false;
 }}
 }

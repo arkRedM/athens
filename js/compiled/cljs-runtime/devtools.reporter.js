@@ -2,14 +2,14 @@ goog.provide('devtools.reporter');
 devtools.reporter.issues_url = "https://github.com/binaryage/cljs-devtools/issues";
 devtools.reporter.report_internal_error_BANG_ = (function devtools$reporter$report_internal_error_BANG_(var_args){
 var args__4742__auto__ = [];
-var len__4736__auto___23316 = arguments.length;
-var i__4737__auto___23317 = (0);
+var len__4736__auto___23321 = arguments.length;
+var i__4737__auto___23322 = (0);
 while(true){
-if((i__4737__auto___23317 < len__4736__auto___23316)){
-args__4742__auto__.push((arguments[i__4737__auto___23317]));
+if((i__4737__auto___23322 < len__4736__auto___23321)){
+args__4742__auto__.push((arguments[i__4737__auto___23322]));
 
-var G__23318 = (i__4737__auto___23317 + (1));
-i__4737__auto___23317 = G__23318;
+var G__23323 = (i__4737__auto___23322 + (1));
+i__4737__auto___23322 = G__23323;
 continue;
 } else {
 }
