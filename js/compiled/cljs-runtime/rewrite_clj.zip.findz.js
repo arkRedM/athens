@@ -135,10 +135,10 @@ return rewrite_clj.zip.findz.find_last_by_pos.cljs$core$IFn$_invoke$arity$3(zloc
 }));
 
 (rewrite_clj.zip.findz.find_last_by_pos.cljs$core$IFn$_invoke$arity$3 = (function (zloc,pos,p_QMARK_){
-return cljs.core.last(cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__29826_SHARP_){
-var and__4115__auto__ = (p_QMARK_.cljs$core$IFn$_invoke$arity$1 ? p_QMARK_.cljs$core$IFn$_invoke$arity$1(p1__29826_SHARP_) : p_QMARK_.call(null,p1__29826_SHARP_));
+return cljs.core.last(cljs.core.filter.cljs$core$IFn$_invoke$arity$2((function (p1__29831_SHARP_){
+var and__4115__auto__ = (p_QMARK_.cljs$core$IFn$_invoke$arity$1 ? p_QMARK_.cljs$core$IFn$_invoke$arity$1(p1__29831_SHARP_) : p_QMARK_.call(null,p1__29831_SHARP_));
 if(cljs.core.truth_(and__4115__auto__)){
-return rewrite_clj.zip.findz.in_range_QMARK_(cljs.core.meta(clojure.zip.node(p1__29826_SHARP_)),pos);
+return rewrite_clj.zip.findz.in_range_QMARK_(cljs.core.meta(clojure.zip.node(p1__29831_SHARP_)),pos);
 } else {
 return and__4115__auto__;
 }

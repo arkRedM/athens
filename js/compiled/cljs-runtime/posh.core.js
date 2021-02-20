@@ -383,12 +383,12 @@ return m;
 }),cljs.core.PersistentArrayMap.EMPTY,changed_cache);
 return cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new_posh_tree,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"cache","cache",-1237023054),cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cache,really_changed], 0)),new cljs.core.Keyword(null,"changed","changed",570724917),really_changed], null)], 0));
 });
-posh.core.process_tx_BANG_ = (function posh$core$process_tx_BANG_(p__36089){
-var map__36090 = p__36089;
-var map__36090__$1 = (((((!((map__36090 == null))))?(((((map__36090.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__36090.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__36090):map__36090);
-var posh_tree = map__36090__$1;
-var dcfg = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__36090__$1,new cljs.core.Keyword(null,"dcfg","dcfg",-880371016));
-var txs = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__36090__$1,new cljs.core.Keyword(null,"txs","txs",2056038378));
+posh.core.process_tx_BANG_ = (function posh$core$process_tx_BANG_(p__36087){
+var map__36088 = p__36087;
+var map__36088__$1 = (((((!((map__36088 == null))))?(((((map__36088.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__36088.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__36088):map__36088);
+var posh_tree = map__36088__$1;
+var dcfg = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__36088__$1,new cljs.core.Keyword(null,"dcfg","dcfg",-880371016));
+var txs = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__36088__$1,new cljs.core.Keyword(null,"txs","txs",2056038378));
 var conns_results = cljs.core.reduce_kv((function (m,conn,tx){
 return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(m,conn,(function (){var fexpr__36092 = new cljs.core.Keyword(null,"transact!","transact!",-822725810).cljs$core$IFn$_invoke$arity$1(dcfg);
 return (fexpr__36092.cljs$core$IFn$_invoke$arity$2 ? fexpr__36092.cljs$core$IFn$_invoke$arity$2(conn,tx) : fexpr__36092.call(null,conn,tx));

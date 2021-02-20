@@ -23,8 +23,8 @@ return athens.util.scroll_top_BANG_(container,(((e_top < cs_top))?e_top:(((cs_bo
  * Finds offset between mouse event and container. If container is not passed, use target as container.
  */
 athens.util.mouse_offset = (function athens$util$mouse_offset(var_args){
-var G__46379 = arguments.length;
-switch (G__46379) {
+var G__50799 = arguments.length;
+switch (G__50799) {
 case 1:
 return athens.util.mouse_offset.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -90,10 +90,10 @@ while(true){
 if((node__$1 == null)){
 return cljs.core.reverse(nodes);
 } else {
-var G__46440 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(nodes,node__$1);
-var G__46441 = node__$1.parentNode;
-nodes = G__46440;
-node__$1 = G__46441;
+var G__50824 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(nodes,node__$1);
+var G__50825 = node__$1.parentNode;
+nodes = G__50824;
+node__$1 = G__50825;
 continue;
 }
 break;
@@ -114,8 +114,8 @@ return cljs.core.nth.cljs$core$IFn$_invoke$arity$2(p1,(i - (1)));
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(i,n)){
 return (new Error("No common ancestor after n loops!"));
 } else {
-var G__46444 = (i + (1));
-i = G__46444;
+var G__50826 = (i + (1));
+i = G__50826;
 continue;
 
 }
@@ -142,8 +142,8 @@ return (new Date()).getTime();
  * Returns today's date or a date OFFSET days before today
  */
 athens.util.get_day = (function athens$util$get_day(var_args){
-var G__46393 = arguments.length;
-switch (G__46393) {
+var G__50813 = arguments.length;
+switch (G__50813) {
 case 0:
 return athens.util.get_day.cljs$core$IFn$_invoke$arity$0();
 
@@ -190,17 +190,17 @@ return clojure.string.replace(x__$3,/PM/,"pm");
 }
 });
 athens.util.uid_to_date = (function athens$util$uid_to_date(uid){
-try{var vec__46403 = clojure.string.split.cljs$core$IFn$_invoke$arity$2(uid,"-");
-var m = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46403,(0),null);
-var d = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46403,(1),null);
-var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__46403,(2),null);
+try{var vec__50815 = clojure.string.split.cljs$core$IFn$_invoke$arity$2(uid,"-");
+var m = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__50815,(0),null);
+var d = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__50815,(1),null);
+var y = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__50815,(2),null);
 var rejoin = clojure.string.join.cljs$core$IFn$_invoke$arity$2("-",new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [y,m,d], null));
 return tick.alpha.api.date.cljs$core$IFn$_invoke$arity$1(rejoin);
-}catch (e46402){if((e46402 instanceof Object)){
-var _ = e46402;
+}catch (e50814){if((e50814 instanceof Object)){
+var _ = e50814;
 return null;
 } else {
-throw e46402;
+throw e50814;
 
 }
 }});
@@ -208,8 +208,8 @@ athens.util.is_timeline_page = (function athens$util$is_timeline_page(uid){
 return cljs.core.boolean$(athens.util.uid_to_date(uid));
 });
 athens.util.regex_esc_char_map = (function (){var esc_chars = "()*&^%$#![]";
-return cljs.core.zipmap(esc_chars,cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__46406_SHARP_){
-return ["\\",cljs.core.str.cljs$core$IFn$_invoke$arity$1(p1__46406_SHARP_)].join('');
+return cljs.core.zipmap(esc_chars,cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__50818_SHARP_){
+return ["\\",cljs.core.str.cljs$core$IFn$_invoke$arity$1(p1__50818_SHARP_)].join('');
 }),esc_chars));
 })();
 /**
@@ -217,6 +217,26 @@ return ["\\",cljs.core.str.cljs$core$IFn$_invoke$arity$1(p1__46406_SHARP_)].join
  */
 athens.util.escape_str = (function athens$util$escape_str(str){
 return clojure.string.escape(str,athens.util.regex_esc_char_map);
+});
+athens.util.rec_path = (function athens$util$rec_path(afn){
+var p = com.rpl.specter.impl.local_declarepath();
+com.rpl.specter.impl.providepath_STAR_(p,(function (){var info__49458__auto__ = athens.util.pathcache50819;
+var info__49458__auto____$1 = (((info__49458__auto__ == null))?(function (){var info50820 = com.rpl.specter.impl.magic_precompilation(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [com.rpl.specter.impl.__GT_FnInvocation(com.rpl.specter.impl.__GT_VarUse(com.rpl.specter.cond_path,new cljs.core.Var(function(){return com.rpl.specter.cond_path;},new cljs.core.Symbol("com.rpl.specter","cond-path","com.rpl.specter/cond-path",97137882,null),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"ns","ns",441598760),new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"file","file",-1269645878),new cljs.core.Keyword(null,"end-column","end-column",1425389514),new cljs.core.Keyword(null,"column","column",2078222095),new cljs.core.Keyword(null,"line","line",212345235),new cljs.core.Keyword(null,"end-line","end-line",1837326455),new cljs.core.Keyword(null,"arglists","arglists",1661989754),new cljs.core.Keyword(null,"doc","doc",1913296891),new cljs.core.Keyword(null,"test","test",577538877)],[new cljs.core.Symbol(null,"com.rpl.specter","com.rpl.specter",-2029095616,null),new cljs.core.Symbol(null,"cond-path","cond-path",-1167797965,null),"com/rpl/specter.cljc",25,1,1394,1394,cljs.core.List.EMPTY,"Takes in alternating cond-path path cond-path path...\n   Tests the structure if selecting with cond-path returns anything.\n   If so, it uses the following path for this portion of the navigation.\n   Otherwise, it tries the next cond-path. If nothing matches, then the structure\n   is not selected.",(cljs.core.truth_(com.rpl.specter.cond_path)?com.rpl.specter.cond_path.cljs$lang$test:null)])),new cljs.core.Symbol("s","cond-path","s/cond-path",-1167797856,null)),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [com.rpl.specter.impl.__GT_VarUse(cljs.core.map_QMARK_,new cljs.core.Var(function(){return cljs.core.map_QMARK_;},new cljs.core.Symbol("cljs.core","map?","cljs.core/map?",-1390345523,null),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"ns","ns",441598760),new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"file","file",-1269645878),new cljs.core.Keyword(null,"end-column","end-column",1425389514),new cljs.core.Keyword(null,"column","column",2078222095),new cljs.core.Keyword(null,"line","line",212345235),new cljs.core.Keyword(null,"end-line","end-line",1837326455),new cljs.core.Keyword(null,"arglists","arglists",1661989754),new cljs.core.Keyword(null,"doc","doc",1913296891),new cljs.core.Keyword(null,"test","test",577538877)],[new cljs.core.Symbol(null,"cljs.core","cljs.core",770546058,null),new cljs.core.Symbol(null,"map?","map?",-1780568534,null),"cljs/core.cljs",11,1,2167,2167,cljs.core.list(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"x","x",-555367584,null)], null)),"Return true if x satisfies IMap",(cljs.core.truth_(cljs.core.map_QMARK_)?cljs.core.map_QMARK_.cljs$lang$test:null)])),new cljs.core.Symbol(null,"map?","map?",-1780568534,null)),com.rpl.specter.impl.__GT_FnInvocation(com.rpl.specter.impl.__GT_VarUse(com.rpl.specter.multi_path,new cljs.core.Var(function(){return com.rpl.specter.multi_path;},new cljs.core.Symbol("com.rpl.specter","multi-path","com.rpl.specter/multi-path",-1001794121,null),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"ns","ns",441598760),new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"file","file",-1269645878),new cljs.core.Keyword(null,"end-column","end-column",1425389514),new cljs.core.Keyword(null,"column","column",2078222095),new cljs.core.Keyword(null,"line","line",212345235),new cljs.core.Keyword(null,"end-line","end-line",1837326455),new cljs.core.Keyword(null,"arglists","arglists",1661989754),new cljs.core.Keyword(null,"doc","doc",1913296891),new cljs.core.Keyword(null,"test","test",577538877)],[new cljs.core.Symbol(null,"com.rpl.specter","com.rpl.specter",-2029095616,null),new cljs.core.Symbol(null,"multi-path","multi-path",-1340561368,null),"com/rpl/specter.cljc",26,1,1409,1409,cljs.core.List.EMPTY,"A path that branches on multiple paths. For updates,\n   applies updates to the paths in order.",(cljs.core.truth_(com.rpl.specter.multi_path)?com.rpl.specter.multi_path.cljs$lang$test:null)])),new cljs.core.Symbol("s","multi-path","s/multi-path",-1340561315,null)),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [com.rpl.specter.impl.__GT_VarUse(com.rpl.specter.MAP_VALS,new cljs.core.Var(function(){return com.rpl.specter.MAP_VALS;},new cljs.core.Symbol("com.rpl.specter","MAP-VALS","com.rpl.specter/MAP-VALS",1866158706,null),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"ns","ns",441598760),new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"file","file",-1269645878),new cljs.core.Keyword(null,"end-column","end-column",1425389514),new cljs.core.Keyword(null,"column","column",2078222095),new cljs.core.Keyword(null,"line","line",212345235),new cljs.core.Keyword(null,"end-line","end-line",1837326455),new cljs.core.Keyword(null,"arglists","arglists",1661989754),new cljs.core.Keyword(null,"doc","doc",1913296891),new cljs.core.Keyword(null,"test","test",577538877)],[new cljs.core.Symbol(null,"com.rpl.specter","com.rpl.specter",-2029095616,null),new cljs.core.Symbol(null,"MAP-VALS","MAP-VALS",-471141163,null),"com/rpl/specter.cljc",11,1,702,705,cljs.core.List.EMPTY,"Navigate to each value of the map. This is more efficient than\n          navigating via [ALL LAST]",(cljs.core.truth_(com.rpl.specter.MAP_VALS)?com.rpl.specter.MAP_VALS.cljs$lang$test:null)])),new cljs.core.Symbol("s","MAP-VALS","s/MAP-VALS",-471140520,null)),com.rpl.specter.impl.__GT_LocalSym(p,new cljs.core.Symbol(null,"p","p",1791580836,null))], null),com.rpl.specter.impl.__GT_LocalSym(afn,new cljs.core.Symbol(null,"afn","afn",216963467,null))], null),cljs.core.list(new cljs.core.Symbol("s","multi-path","s/multi-path",-1340561315,null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol("s","MAP-VALS","s/MAP-VALS",-471140520,null),new cljs.core.Symbol(null,"p","p",1791580836,null)], null),new cljs.core.Symbol(null,"afn","afn",216963467,null))),com.rpl.specter.impl.__GT_VarUse(cljs.core.sequential_QMARK_,new cljs.core.Var(function(){return cljs.core.sequential_QMARK_;},new cljs.core.Symbol("cljs.core","sequential?","cljs.core/sequential?",1777854658,null),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"ns","ns",441598760),new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"file","file",-1269645878),new cljs.core.Keyword(null,"end-column","end-column",1425389514),new cljs.core.Keyword(null,"column","column",2078222095),new cljs.core.Keyword(null,"line","line",212345235),new cljs.core.Keyword(null,"end-line","end-line",1837326455),new cljs.core.Keyword(null,"arglists","arglists",1661989754),new cljs.core.Keyword(null,"doc","doc",1913296891),new cljs.core.Keyword(null,"test","test",577538877)],[new cljs.core.Symbol(null,"cljs.core","cljs.core",770546058,null),new cljs.core.Symbol(null,"sequential?","sequential?",1102351463,null),"cljs/core.cljs",18,1,2155,2155,cljs.core.list(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"x","x",-555367584,null)], null)),"Returns true if coll satisfies ISequential",(cljs.core.truth_(cljs.core.sequential_QMARK_)?cljs.core.sequential_QMARK_.cljs$lang$test:null)])),new cljs.core.Symbol(null,"sequential?","sequential?",1102351463,null)),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [com.rpl.specter.impl.__GT_VarUse(com.rpl.specter.ALL,new cljs.core.Var(function(){return com.rpl.specter.ALL;},new cljs.core.Symbol("com.rpl.specter","ALL","com.rpl.specter/ALL",-1409005960,null),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"ns","ns",441598760),new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"file","file",-1269645878),new cljs.core.Keyword(null,"end-column","end-column",1425389514),new cljs.core.Keyword(null,"column","column",2078222095),new cljs.core.Keyword(null,"line","line",212345235),new cljs.core.Keyword(null,"end-line","end-line",1837326455),new cljs.core.Keyword(null,"arglists","arglists",1661989754),new cljs.core.Keyword(null,"doc","doc",1913296891),new cljs.core.Keyword(null,"test","test",577538877)],[new cljs.core.Symbol(null,"com.rpl.specter","com.rpl.specter",-2029095616,null),new cljs.core.Symbol(null,"ALL","ALL",866837407,null),"com/rpl/specter.cljc",6,1,679,682,cljs.core.List.EMPTY,"Navigate to every element of the collection. For maps navigates to\n          a vector of `[key value]`.",(cljs.core.truth_(com.rpl.specter.ALL)?com.rpl.specter.ALL.cljs$lang$test:null)])),new cljs.core.Symbol("s","ALL","s/ALL",866837282,null)),com.rpl.specter.impl.__GT_LocalSym(p,new cljs.core.Symbol(null,"p","p",1791580836,null))], null)], null),cljs.core.list(new cljs.core.Symbol("s","cond-path","s/cond-path",-1167797856,null),new cljs.core.Symbol(null,"map?","map?",-1780568534,null),cljs.core.list(new cljs.core.Symbol("s","multi-path","s/multi-path",-1340561315,null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol("s","MAP-VALS","s/MAP-VALS",-471140520,null),new cljs.core.Symbol(null,"p","p",1791580836,null)], null),new cljs.core.Symbol(null,"afn","afn",216963467,null)),new cljs.core.Symbol(null,"sequential?","sequential?",1102351463,null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol("s","ALL","s/ALL",866837282,null),new cljs.core.Symbol(null,"p","p",1791580836,null)], null)))], null),"athens.util",new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"p","p",1791580836,null),new cljs.core.Symbol(null,"afn","afn",216963467,null),new cljs.core.Symbol(null,"p","p",1791580836,null)], null),new cljs.core.PersistentVector(null, 11, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol("s","cond-path","s/cond-path",-1167797856,null),new cljs.core.Symbol(null,"map?","map?",-1780568534,null),new cljs.core.Symbol("s","multi-path","s/multi-path",-1340561315,null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol("s","MAP-VALS","s/MAP-VALS",-471140520,null),new cljs.core.Symbol(null,"p","p",1791580836,null)], null),new cljs.core.Symbol("s","MAP-VALS","s/MAP-VALS",-471140520,null),new cljs.core.Symbol(null,"p","p",1791580836,null),new cljs.core.Symbol(null,"afn","afn",216963467,null),new cljs.core.Symbol(null,"sequential?","sequential?",1102351463,null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol("s","ALL","s/ALL",866837282,null),new cljs.core.Symbol(null,"p","p",1791580836,null)], null),new cljs.core.Symbol("s","ALL","s/ALL",866837282,null),new cljs.core.Symbol(null,"p","p",1791580836,null)], null));
+athens.util.pathcache50819 = info50820;
+
+return info50820;
+})():info__49458__auto__);
+var precompiled50821 = com.rpl.specter.impl.cached_path_info_precompiled(info__49458__auto____$1);
+var dynamic_QMARK___49459__auto__ = com.rpl.specter.impl.cached_path_info_dynamic_QMARK_(info__49458__auto____$1);
+if(cljs.core.truth_(dynamic_QMARK___49459__auto__)){
+var G__50822 = new cljs.core.PersistentVector(null, 11, 5, cljs.core.PersistentVector.EMPTY_NODE, [com.rpl.specter.cond_path,cljs.core.map_QMARK_,com.rpl.specter.multi_path,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [com.rpl.specter.MAP_VALS,p], null),com.rpl.specter.MAP_VALS,p,afn,cljs.core.sequential_QMARK_,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [com.rpl.specter.ALL,p], null),com.rpl.specter.ALL,p], null);
+return (precompiled50821.cljs$core$IFn$_invoke$arity$1 ? precompiled50821.cljs$core$IFn$_invoke$arity$1(G__50822) : precompiled50821.call(null,G__50822));
+} else {
+return precompiled50821;
+}
+})());
+
+return p;
 });
 athens.util.get_os = (function athens$util$get_os(){
 var os = window.navigator.appVersion;

@@ -5,8 +5,8 @@ while(true){
 if((cnt < len)){
 (dest[(dest_start + cnt)] = (src[(src_start + cnt)]));
 
-var G__55977 = (cnt + (1));
-cnt = G__55977;
+var G__60405 = (cnt + (1));
+cnt = G__60405;
 continue;
 } else {
 return null;
@@ -109,14 +109,14 @@ var n__4613__auto__ = self__.length;
 var x = (0);
 while(true){
 if((x < n__4613__auto__)){
-var v_55980 = this$.pop();
-if((keep_QMARK_.cljs$core$IFn$_invoke$arity$1 ? keep_QMARK_.cljs$core$IFn$_invoke$arity$1(v_55980) : keep_QMARK_.call(null,v_55980))){
-this$.unshift(v_55980);
+var v_60408 = this$.pop();
+if((keep_QMARK_.cljs$core$IFn$_invoke$arity$1 ? keep_QMARK_.cljs$core$IFn$_invoke$arity$1(v_60408) : keep_QMARK_.call(null,v_60408))){
+this$.unshift(v_60408);
 } else {
 }
 
-var G__55981 = (x + (1));
-x = G__55981;
+var G__60409 = (x + (1));
+x = G__60409;
 continue;
 } else {
 return null;

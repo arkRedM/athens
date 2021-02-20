@@ -94,14 +94,14 @@ break;
  * Remove current node and move left. If current node is at the leftmost
  * location, returns `nil`.
  */
-rewrite_clj.zip.utils.remove_and_move_left = (function rewrite_clj$zip$utils$remove_and_move_left(p__29827){
-var vec__29828 = p__29827;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__29828,(0),null);
-var map__29831 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__29828,(1),null);
-var map__29831__$1 = (((((!((map__29831 == null))))?(((((map__29831.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__29831.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__29831):map__29831);
-var path = map__29831__$1;
-var l = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__29831__$1,new cljs.core.Keyword(null,"l","l",1395893423));
-var loc = vec__29828;
+rewrite_clj.zip.utils.remove_and_move_left = (function rewrite_clj$zip$utils$remove_and_move_left(p__29826){
+var vec__29827 = p__29826;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__29827,(0),null);
+var map__29830 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__29827,(1),null);
+var map__29830__$1 = (((((!((map__29830 == null))))?(((((map__29830.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__29830.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__29830):map__29830);
+var path = map__29830__$1;
+var l = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__29830__$1,new cljs.core.Keyword(null,"l","l",1395893423));
+var loc = vec__29827;
 if(cljs.core.seq(l)){
 return cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.peek(l),cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(cljs.core.update_in.cljs$core$IFn$_invoke$arity$3(path,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"l","l",1395893423)], null),cljs.core.pop),new cljs.core.Keyword(null,"changed?","changed?",-437828330),true)], null),cljs.core.meta(loc));
 } else {
