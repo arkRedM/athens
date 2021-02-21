@@ -6,9 +6,9 @@ var temp__5733__auto__ = (rewrite_clj.reader.peek_char.cljs$core$IFn$_invoke$ari
 if(cljs.core.truth_(temp__5733__auto__)){
 var c = temp__5733__auto__;
 if((c === ":")){
-var G__29640 = rewrite_clj.reader.read_keyword(reader,":");
-var G__29641 = true;
-return (rewrite_clj.node.keyword_node.cljs$core$IFn$_invoke$arity$2 ? rewrite_clj.node.keyword_node.cljs$core$IFn$_invoke$arity$2(G__29640,G__29641) : rewrite_clj.node.keyword_node.call(null,G__29640,G__29641));
+var G__29639 = rewrite_clj.reader.read_keyword(reader,":");
+var G__29640 = true;
+return (rewrite_clj.node.keyword_node.cljs$core$IFn$_invoke$arity$2 ? rewrite_clj.node.keyword_node.cljs$core$IFn$_invoke$arity$2(G__29639,G__29640) : rewrite_clj.node.keyword_node.call(null,G__29639,G__29640));
 } else {
 var G__29642_29645 = reader;
 var G__29643_29646 = ":";

@@ -12,8 +12,8 @@ return cljs.core.vec(vs);
  */
 reitit.frontend.query_params = (function reitit$frontend$query_params(uri){
 var q = uri.getQueryData();
-return cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,cljs.core.map.cljs$core$IFn$_invoke$arity$2(cljs.core.juxt.cljs$core$IFn$_invoke$arity$2(cljs.core.keyword,(function (p1__58246_SHARP_){
-return reitit.frontend.query_param(q,p1__58246_SHARP_);
+return cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,cljs.core.map.cljs$core$IFn$_invoke$arity$2(cljs.core.juxt.cljs$core$IFn$_invoke$arity$2(cljs.core.keyword,(function (p1__58247_SHARP_){
+return reitit.frontend.query_param(q,p1__58247_SHARP_);
 })),q.getKeys()));
 });
 /**
@@ -106,8 +106,8 @@ return reitit.core.router.cljs$core$IFn$_invoke$arity$2(raw_routes,cljs.core.mer
  * Logs problems using console.warn
  */
 reitit.frontend.match_by_name_BANG_ = (function reitit$frontend$match_by_name_BANG_(var_args){
-var G__58262 = arguments.length;
-switch (G__58262) {
+var G__58261 = arguments.length;
+switch (G__58261) {
 case 2:
 return reitit.frontend.match_by_name_BANG_.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 

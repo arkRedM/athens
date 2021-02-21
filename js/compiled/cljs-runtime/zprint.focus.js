@@ -94,10 +94,10 @@ return zprint.focus.skip_whitespace_ssv(ssv,index);
 return null;
 }
 } else {
-var G__28153 = zprint.focus.next_ssv(ssv,index);
-var G__28154 = (moves - (1));
-index = G__28153;
-moves = G__28154;
+var G__28160 = zprint.focus.next_ssv(ssv,index);
+var G__28161 = (moves - (1));
+index = G__28160;
+moves = G__28161;
 continue;
 }
 } else {
@@ -118,10 +118,10 @@ if(cljs.core.truth_(idx)){
 if(cljs.core.empty_QMARK_(nwp)){
 return idx;
 } else {
-var G__28159 = zprint.focus.right_ssv(cljs.core.first(nwp),ssv,zprint.focus.down_ssv(ssv,idx));
-var G__28160 = cljs.core.next(nwp);
-idx = G__28159;
-nwp = G__28160;
+var G__28163 = zprint.focus.right_ssv(cljs.core.first(nwp),ssv,zprint.focus.down_ssv(ssv,idx));
+var G__28164 = cljs.core.next(nwp);
+idx = G__28163;
+nwp = G__28164;
 continue;
 }
 } else {

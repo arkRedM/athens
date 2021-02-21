@@ -9,8 +9,8 @@ cljc.java_time.instant.range = (function cljc$java_time$instant$range(this3983,j
 return this3983.range(java_time_temporal_TemporalField3984);
 });
 cljc.java_time.instant.of_epoch_second = (function cljc$java_time$instant$of_epoch_second(var_args){
-var G__46184 = arguments.length;
-switch (G__46184) {
+var G__46183 = arguments.length;
+switch (G__46183) {
 case 1:
 return cljc.java_time.instant.of_epoch_second.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -54,8 +54,8 @@ cljc.java_time.instant.plus_nanos = (function cljc$java_time$instant$plus_nanos(
 return this3997.plusNanos(long3998);
 });
 cljc.java_time.instant.plus = (function cljc$java_time$instant$plus(var_args){
-var G__46190 = arguments.length;
-switch (G__46190) {
+var G__46188 = arguments.length;
+switch (G__46188) {
 case 2:
 return cljc.java_time.instant.plus.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 

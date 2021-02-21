@@ -21,8 +21,8 @@ cljc.java_time.year_month.get_year = (function cljc$java_time$year_month$get_yea
 return this4577.year();
 });
 cljc.java_time.year_month.plus = (function cljc$java_time$year_month$plus(var_args){
-var G__46257 = arguments.length;
-switch (G__46257) {
+var G__46256 = arguments.length;
+switch (G__46256) {
 case 3:
 return cljc.java_time.year_month.plus.cljs$core$IFn$_invoke$arity$3((arguments[(0)]),(arguments[(1)]),(arguments[(2)]));
 

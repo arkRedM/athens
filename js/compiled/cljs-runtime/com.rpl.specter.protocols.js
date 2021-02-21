@@ -74,7 +74,7 @@ return com$rpl$specter$protocols$RichNavigator$transform_STAR_$dyn_34089(this$,v
  */
 com.rpl.specter.protocols.Collector = function(){};
 
-var com$rpl$specter$protocols$Collector$collect_val$dyn_34090 = (function (this$,structure){
+var com$rpl$specter$protocols$Collector$collect_val$dyn_34096 = (function (this$,structure){
 var x__4428__auto__ = (((this$ == null))?null:this$);
 var m__4429__auto__ = (com.rpl.specter.protocols.collect_val[goog.typeOf(x__4428__auto__)]);
 if((!((m__4429__auto__ == null)))){
@@ -92,7 +92,7 @@ com.rpl.specter.protocols.collect_val = (function com$rpl$specter$protocols$coll
 if((((!((this$ == null)))) && ((!((this$.com$rpl$specter$protocols$Collector$collect_val$arity$2 == null)))))){
 return this$.com$rpl$specter$protocols$Collector$collect_val$arity$2(this$,structure);
 } else {
-return com$rpl$specter$protocols$Collector$collect_val$dyn_34090(this$,structure);
+return com$rpl$specter$protocols$Collector$collect_val$dyn_34096(this$,structure);
 }
 });
 
@@ -102,7 +102,7 @@ return com$rpl$specter$protocols$Collector$collect_val$dyn_34090(this$,structure
  */
 com.rpl.specter.protocols.ImplicitNav = function(){};
 
-var com$rpl$specter$protocols$ImplicitNav$implicit_nav$dyn_34091 = (function (obj){
+var com$rpl$specter$protocols$ImplicitNav$implicit_nav$dyn_34098 = (function (obj){
 var x__4428__auto__ = (((obj == null))?null:obj);
 var m__4429__auto__ = (com.rpl.specter.protocols.implicit_nav[goog.typeOf(x__4428__auto__)]);
 if((!((m__4429__auto__ == null)))){
@@ -120,7 +120,7 @@ com.rpl.specter.protocols.implicit_nav = (function com$rpl$specter$protocols$imp
 if((((!((obj == null)))) && ((!((obj.com$rpl$specter$protocols$ImplicitNav$implicit_nav$arity$1 == null)))))){
 return obj.com$rpl$specter$protocols$ImplicitNav$implicit_nav$arity$1(obj);
 } else {
-return com$rpl$specter$protocols$ImplicitNav$implicit_nav$dyn_34091(obj);
+return com$rpl$specter$protocols$ImplicitNav$implicit_nav$dyn_34098(obj);
 }
 });
 
