@@ -9,8 +9,8 @@ athens.style.ZINDICES = new cljs.core.PersistentArrayMap(null, 7, [new cljs.core
  *   Only accepts keywords.
  */
 athens.style.color = (function athens$style$color(var_args){
-var G__64768 = arguments.length;
-switch (G__64768) {
+var G__64675 = arguments.length;
+switch (G__64675) {
 case 1:
 return athens.style.color.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -50,14 +50,14 @@ athens.style.app_styles = new cljs.core.PersistentArrayMap(null, 3, [new cljs.co
  *   There are 5 opacities and 12 colors. There are 72 keys (includes default opacity, 1.0)
  */
 athens.style.permute_color_opacities = (function athens$style$permute_color_opacities(theme){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,cljs.core.mapcat.cljs$core$IFn$_invoke$arity$variadic((function (p__64776){
-var vec__64777 = p__64776;
-var color_k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__64777,(0),null);
-var color_v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__64777,(1),null);
-return cljs.core.concat.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(["--",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.symbol.cljs$core$IFn$_invoke$arity$1(color_k))].join('')),color_v], null),cljs.core.mapcat.cljs$core$IFn$_invoke$arity$variadic((function (p__64780){
-var vec__64781 = p__64780;
-var opacity_k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__64781,(0),null);
-var opacity_v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__64781,(1),null);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,cljs.core.mapcat.cljs$core$IFn$_invoke$arity$variadic((function (p__64681){
+var vec__64682 = p__64681;
+var color_k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__64682,(0),null);
+var color_v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__64682,(1),null);
+return cljs.core.concat.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(["--",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.symbol.cljs$core$IFn$_invoke$arity$1(color_k))].join('')),color_v], null),cljs.core.mapcat.cljs$core$IFn$_invoke$arity$variadic((function (p__64686){
+var vec__64687 = p__64686;
+var opacity_k = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__64687,(0),null);
+var opacity_v = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__64687,(1),null);
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(["--",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.symbol.cljs$core$IFn$_invoke$arity$1(color_k)),"---",cljs.core.str.cljs$core$IFn$_invoke$arity$1(cljs.core.symbol.cljs$core$IFn$_invoke$arity$1(opacity_k))].join('')),garden.color.opacify(garden.color.hex__GT_hsl(color_v),opacity_v)], null);
 }),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([athens.style.OPACITIES], 0)));
 }),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([theme], 0)));
@@ -69,9 +69,9 @@ stylefy.core.tag("html",athens.style.base_styles);
 
 stylefy.core.tag("*",new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"box-sizing","box-sizing",-1956090239),"border-box"], null));
 
-var permute_light_64804 = athens.style.permute_color_opacities(athens.style.THEME_LIGHT);
-var permute_dark_64805 = athens.style.permute_color_opacities(athens.style.THEME_DARK);
-stylefy.core.tag(":root",cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([permute_light_64804,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword("stylefy.core","media","stylefy.core/media",-1323617834),cljs.core.PersistentArrayMap.createAsIfByAssoc([new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"prefers-color-scheme","prefers-color-scheme",-1885369990),"dark"], null),permute_dark_64805])], null)], 0)));
+var permute_light_64708 = athens.style.permute_color_opacities(athens.style.THEME_LIGHT);
+var permute_dark_64709 = athens.style.permute_color_opacities(athens.style.THEME_DARK);
+stylefy.core.tag(":root",cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([permute_light_64708,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword("stylefy.core","media","stylefy.core/media",-1323617834),cljs.core.PersistentArrayMap.createAsIfByAssoc([new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"prefers-color-scheme","prefers-color-scheme",-1885369990),"dark"], null),permute_dark_64709])], null)], 0)));
 
 return athens.util.hide_10x();
 });

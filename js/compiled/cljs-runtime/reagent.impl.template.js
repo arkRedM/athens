@@ -88,24 +88,24 @@ return cljs.core.clj__GT_js(x);
 } else {
 if(cljs.core.ifn_QMARK_(x)){
 return (function() { 
-var G__31809__delegate = function (args){
+var G__31807__delegate = function (args){
 return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(x,args);
 };
-var G__31809 = function (var_args){
+var G__31807 = function (var_args){
 var args = null;
 if (arguments.length > 0) {
-var G__31810__i = 0, G__31810__a = new Array(arguments.length -  0);
-while (G__31810__i < G__31810__a.length) {G__31810__a[G__31810__i] = arguments[G__31810__i + 0]; ++G__31810__i;}
-  args = new cljs.core.IndexedSeq(G__31810__a,0,null);
+var G__31808__i = 0, G__31808__a = new Array(arguments.length -  0);
+while (G__31808__i < G__31808__a.length) {G__31808__a[G__31808__i] = arguments[G__31808__i + 0]; ++G__31808__i;}
+  args = new cljs.core.IndexedSeq(G__31808__a,0,null);
 } 
-return G__31809__delegate.call(this,args);};
-G__31809.cljs$lang$maxFixedArity = 0;
-G__31809.cljs$lang$applyTo = (function (arglist__31811){
-var args = cljs.core.seq(arglist__31811);
-return G__31809__delegate(args);
+return G__31807__delegate.call(this,args);};
+G__31807.cljs$lang$maxFixedArity = 0;
+G__31807.cljs$lang$applyTo = (function (arglist__31809){
+var args = cljs.core.seq(arglist__31809);
+return G__31807__delegate(args);
 });
-G__31809.cljs$core$IFn$_invoke$arity$variadic = G__31809__delegate;
-return G__31809;
+G__31807.cljs$core$IFn$_invoke$arity$variadic = G__31807__delegate;
+return G__31807;
 })()
 ;
 } else {
@@ -426,11 +426,11 @@ var c = reagent.impl.component.as_class(tag);
 var jsprops = ({});
 (jsprops.argv = v);
 
-var temp__5739__auto___31842 = reagent.impl.template.key_from_vec(v);
-if((temp__5739__auto___31842 == null)){
+var temp__5739__auto___31834 = reagent.impl.template.key_from_vec(v);
+if((temp__5739__auto___31834 == null)){
 } else {
-var key_31847 = temp__5739__auto___31842;
-(jsprops.key = key_31847);
+var key_31837 = temp__5739__auto___31834;
+(jsprops.key = key_31837);
 }
 
 return module$node_modules$react$index.createElement(c,jsprops);
