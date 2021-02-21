@@ -159,53 +159,53 @@ var subs_cache = cljs.core.deref(day8.re_frame_10x.inlined_deps.re_frame.v0v11v0
 return (function (){
 var original_subs_27905 = cljs.core.set(cljs.core.vals(subs_cache));
 var current_subs_27906 = cljs.core.set(cljs.core.vals(cljs.core.deref(day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.subs.query__GT_reaction)));
-var seq__27877_27907 = cljs.core.seq(clojure.set.difference.cljs$core$IFn$_invoke$arity$2(current_subs_27906,original_subs_27905));
-var chunk__27878_27908 = null;
-var count__27879_27909 = (0);
-var i__27880_27910 = (0);
+var seq__27879_27907 = cljs.core.seq(clojure.set.difference.cljs$core$IFn$_invoke$arity$2(current_subs_27906,original_subs_27905));
+var chunk__27880_27908 = null;
+var count__27881_27909 = (0);
+var i__27882_27910 = (0);
 while(true){
-if((i__27880_27910 < count__27879_27909)){
-var sub_27911 = chunk__27878_27908.cljs$core$IIndexed$_nth$arity$2(null,i__27880_27910);
+if((i__27882_27910 < count__27881_27909)){
+var sub_27911 = chunk__27880_27908.cljs$core$IIndexed$_nth$arity$2(null,i__27882_27910);
 day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.interop.dispose_BANG_(sub_27911);
 
 
-var G__27912 = seq__27877_27907;
-var G__27913 = chunk__27878_27908;
-var G__27914 = count__27879_27909;
-var G__27915 = (i__27880_27910 + (1));
-seq__27877_27907 = G__27912;
-chunk__27878_27908 = G__27913;
-count__27879_27909 = G__27914;
-i__27880_27910 = G__27915;
+var G__27912 = seq__27879_27907;
+var G__27913 = chunk__27880_27908;
+var G__27914 = count__27881_27909;
+var G__27915 = (i__27882_27910 + (1));
+seq__27879_27907 = G__27912;
+chunk__27880_27908 = G__27913;
+count__27881_27909 = G__27914;
+i__27882_27910 = G__27915;
 continue;
 } else {
-var temp__5735__auto___27916 = cljs.core.seq(seq__27877_27907);
+var temp__5735__auto___27916 = cljs.core.seq(seq__27879_27907);
 if(temp__5735__auto___27916){
-var seq__27877_27917__$1 = temp__5735__auto___27916;
-if(cljs.core.chunked_seq_QMARK_(seq__27877_27917__$1)){
-var c__4556__auto___27918 = cljs.core.chunk_first(seq__27877_27917__$1);
-var G__27919 = cljs.core.chunk_rest(seq__27877_27917__$1);
+var seq__27879_27917__$1 = temp__5735__auto___27916;
+if(cljs.core.chunked_seq_QMARK_(seq__27879_27917__$1)){
+var c__4556__auto___27918 = cljs.core.chunk_first(seq__27879_27917__$1);
+var G__27919 = cljs.core.chunk_rest(seq__27879_27917__$1);
 var G__27920 = c__4556__auto___27918;
 var G__27921 = cljs.core.count(c__4556__auto___27918);
 var G__27922 = (0);
-seq__27877_27907 = G__27919;
-chunk__27878_27908 = G__27920;
-count__27879_27909 = G__27921;
-i__27880_27910 = G__27922;
+seq__27879_27907 = G__27919;
+chunk__27880_27908 = G__27920;
+count__27881_27909 = G__27921;
+i__27882_27910 = G__27922;
 continue;
 } else {
-var sub_27923 = cljs.core.first(seq__27877_27917__$1);
+var sub_27923 = cljs.core.first(seq__27879_27917__$1);
 day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.interop.dispose_BANG_(sub_27923);
 
 
-var G__27924 = cljs.core.next(seq__27877_27917__$1);
+var G__27924 = cljs.core.next(seq__27879_27917__$1);
 var G__27925 = null;
 var G__27926 = (0);
 var G__27927 = (0);
-seq__27877_27907 = G__27924;
-chunk__27878_27908 = G__27925;
-count__27879_27909 = G__27926;
-i__27880_27910 = G__27927;
+seq__27879_27907 = G__27924;
+chunk__27880_27908 = G__27925;
+count__27881_27909 = G__27926;
+i__27882_27910 = G__27927;
 continue;
 }
 } else {
@@ -344,9 +344,9 @@ return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(day8.re_frame_10x.inlined_d
 (day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.core.register_sub.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.core.register_sub.cljs$lang$applyTo = (function (seq27897){
+(day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.core.register_sub.cljs$lang$applyTo = (function (seq27896){
 var self__4724__auto__ = this;
-return self__4724__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq27897));
+return self__4724__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq27896));
 }));
 
 

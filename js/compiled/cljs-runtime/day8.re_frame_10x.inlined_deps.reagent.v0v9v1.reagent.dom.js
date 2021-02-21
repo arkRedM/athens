@@ -48,8 +48,8 @@ return day8.re_frame_10x.inlined_deps.reagent.v0v9v1.reagent.dom.render_comp(com
  *   Returns the mounted component instance.
  */
 day8.re_frame_10x.inlined_deps.reagent.v0v9v1.reagent.dom.render = (function day8$re_frame_10x$inlined_deps$reagent$v0v9v1$reagent$dom$render(var_args){
-var G__26661 = arguments.length;
-switch (G__26661) {
+var G__26664 = arguments.length;
+switch (G__26664) {
 case 2:
 return day8.re_frame_10x.inlined_deps.reagent.v0v9v1.reagent.dom.render.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -138,18 +138,18 @@ count__26667_26673 = G__26685;
 i__26668_26674 = G__26686;
 continue;
 } else {
-var v_26687 = cljs.core.first(seq__26665_26681__$1);
-cljs.core.apply.cljs$core$IFn$_invoke$arity$2(day8.re_frame_10x.inlined_deps.reagent.v0v9v1.reagent.dom.re_render_component,v_26687);
+var v_26688 = cljs.core.first(seq__26665_26681__$1);
+cljs.core.apply.cljs$core$IFn$_invoke$arity$2(day8.re_frame_10x.inlined_deps.reagent.v0v9v1.reagent.dom.re_render_component,v_26688);
 
 
-var G__26688 = cljs.core.next(seq__26665_26681__$1);
-var G__26689 = null;
-var G__26690 = (0);
-var G__26691 = (0);
-seq__26665_26671 = G__26688;
-chunk__26666_26672 = G__26689;
-count__26667_26673 = G__26690;
-i__26668_26674 = G__26691;
+var G__26690 = cljs.core.next(seq__26665_26681__$1);
+var G__26691 = null;
+var G__26692 = (0);
+var G__26693 = (0);
+seq__26665_26671 = G__26690;
+chunk__26666_26672 = G__26691;
+count__26667_26673 = G__26692;
+i__26668_26674 = G__26693;
 continue;
 }
 } else {

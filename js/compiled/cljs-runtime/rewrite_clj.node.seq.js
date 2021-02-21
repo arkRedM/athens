@@ -327,8 +327,8 @@ return rewrite_clj.node.seq.__GT_SeqNode(new cljs.core.Keyword(null,"set","set",
  * Create a node representing an EDN map.
  */
 rewrite_clj.node.seq.map_node = (function rewrite_clj$node$seq$map_node(children){
-return rewrite_clj.node.seq.__GT_SeqNode(new cljs.core.Keyword(null,"map","map",1371690461),rewrite_clj.node.seq.wrap_map,(2),(function (p1__29597_SHARP_){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,p1__29597_SHARP_);
+return rewrite_clj.node.seq.__GT_SeqNode(new cljs.core.Keyword(null,"map","map",1371690461),rewrite_clj.node.seq.wrap_map,(2),(function (p1__29596_SHARP_){
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,p1__29596_SHARP_);
 }),children);
 });
 

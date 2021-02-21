@@ -70,8 +70,8 @@ var sloc = sexpr;
 var i = (0);
 while(true){
 if(cljs.core.truth_(sloc)){
-if(cljs.core.truth_((function (){var G__30454 = cljs.core.first(sloc);
-return (zthing_QMARK_.cljs$core$IFn$_invoke$arity$1 ? zthing_QMARK_.cljs$core$IFn$_invoke$arity$1(G__30454) : zthing_QMARK_.call(null,G__30454));
+if(cljs.core.truth_((function (){var G__30447 = cljs.core.first(sloc);
+return (zthing_QMARK_.cljs$core$IFn$_invoke$arity$1 ? zthing_QMARK_.cljs$core$IFn$_invoke$arity$1(G__30447) : zthing_QMARK_.call(null,G__30447));
 })())){
 return i;
 } else {
@@ -289,14 +289,14 @@ return (((x instanceof cljs.core.Keyword)) || (typeof x === 'string') || (typeof
  *   in seqs with more than one element have the same namespace. Returns
  *   the [namespace pair-seq] or nil.
  */
-zprint.sutil.slift_ns = (function zprint$sutil$slift_ns(p__30481,pair_seq,ns){
-var map__30482 = p__30481;
-var map__30482__$1 = (((((!((map__30482 == null))))?(((((map__30482.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__30482.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__30482):map__30482);
-var map_options = map__30482__$1;
-var in_code_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__30482__$1,new cljs.core.Keyword(null,"in-code?","in-code?",194866464));
-var lift_ns_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__30482__$1,new cljs.core.Keyword(null,"lift-ns?","lift-ns?",2021372853));
-var lift_ns_in_code_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__30482__$1,new cljs.core.Keyword(null,"lift-ns-in-code?","lift-ns-in-code?",1444279377));
-var unlift_ns_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__30482__$1,new cljs.core.Keyword(null,"unlift-ns?","unlift-ns?",1065087867));
+zprint.sutil.slift_ns = (function zprint$sutil$slift_ns(p__30476,pair_seq,ns){
+var map__30477 = p__30476;
+var map__30477__$1 = (((((!((map__30477 == null))))?(((((map__30477.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__30477.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__30477):map__30477);
+var map_options = map__30477__$1;
+var in_code_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__30477__$1,new cljs.core.Keyword(null,"in-code?","in-code?",194866464));
+var lift_ns_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__30477__$1,new cljs.core.Keyword(null,"lift-ns?","lift-ns?",2021372853));
+var lift_ns_in_code_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__30477__$1,new cljs.core.Keyword(null,"lift-ns-in-code?","lift-ns-in-code?",1444279377));
+var unlift_ns_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__30477__$1,new cljs.core.Keyword(null,"unlift-ns?","unlift-ns?",1065087867));
 if(cljs.core.truth_((function (){var and__4115__auto__ = lift_ns_QMARK_;
 if(cljs.core.truth_(and__4115__auto__)){
 if(cljs.core.truth_(in_code_QMARK_)){
@@ -319,13 +319,13 @@ var ns__$1 = null;
 var pair_seq__$1 = pair_seq;
 var out = cljs.core.PersistentVector.EMPTY;
 while(true){
-var vec__30492 = cljs.core.first(pair_seq__$1);
-var seq__30493 = cljs.core.seq(vec__30492);
-var first__30494 = cljs.core.first(seq__30493);
-var seq__30493__$1 = cljs.core.next(seq__30493);
-var k = first__30494;
-var rest_of_pair = seq__30493__$1;
-var pair = vec__30492;
+var vec__30491 = cljs.core.first(pair_seq__$1);
+var seq__30492 = cljs.core.seq(vec__30491);
+var first__30493 = cljs.core.first(seq__30492);
+var seq__30492__$1 = cljs.core.next(seq__30492);
+var k = first__30493;
+var rest_of_pair = seq__30492__$1;
+var pair = vec__30491;
 var current_ns = ((((rest_of_pair) && ((((k instanceof cljs.core.Keyword)) || ((k instanceof cljs.core.Symbol))))))?cljs.core.namespace(k):null);
 if(cljs.core.not(k)){
 if(cljs.core.truth_(ns__$1)){
@@ -337,33 +337,33 @@ return null;
 if(cljs.core.truth_(current_ns)){
 if(cljs.core.truth_(ns__$1)){
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(ns__$1,current_ns)){
-var G__30647 = ns__$1;
-var G__30648 = cljs.core.next(pair_seq__$1);
-var G__30649 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,cljs.core.cons(strip_ns(k),rest_of_pair));
-ns__$1 = G__30647;
-pair_seq__$1 = G__30648;
-out = G__30649;
+var G__30644 = ns__$1;
+var G__30645 = cljs.core.next(pair_seq__$1);
+var G__30646 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,cljs.core.cons(strip_ns(k),rest_of_pair));
+ns__$1 = G__30644;
+pair_seq__$1 = G__30645;
+out = G__30646;
 continue;
 } else {
 return null;
 }
 } else {
-var G__30650 = current_ns;
-var G__30651 = cljs.core.next(pair_seq__$1);
-var G__30652 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,cljs.core.cons(strip_ns(k),rest_of_pair));
-ns__$1 = G__30650;
-pair_seq__$1 = G__30651;
-out = G__30652;
+var G__30648 = current_ns;
+var G__30649 = cljs.core.next(pair_seq__$1);
+var G__30650 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,cljs.core.cons(strip_ns(k),rest_of_pair));
+ns__$1 = G__30648;
+pair_seq__$1 = G__30649;
+out = G__30650;
 continue;
 }
 } else {
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.count(pair),(1))){
-var G__30653 = ns__$1;
-var G__30654 = cljs.core.next(pair_seq__$1);
-var G__30655 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,pair);
-ns__$1 = G__30653;
-pair_seq__$1 = G__30654;
-out = G__30655;
+var G__30651 = ns__$1;
+var G__30652 = cljs.core.next(pair_seq__$1);
+var G__30653 = cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,pair);
+ns__$1 = G__30651;
+pair_seq__$1 = G__30652;
+out = G__30653;
 continue;
 } else {
 return null;
