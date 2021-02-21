@@ -69,14 +69,14 @@ return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__67102,seq67101
  */
 sci.impl.multimethods.defmulti = (function sci$impl$multimethods$defmulti(var_args){
 var args__4742__auto__ = [];
-var len__4736__auto___67132 = arguments.length;
-var i__4737__auto___67133 = (0);
+var len__4736__auto___67133 = arguments.length;
+var i__4737__auto___67134 = (0);
 while(true){
-if((i__4737__auto___67133 < len__4736__auto___67132)){
-args__4742__auto__.push((arguments[i__4737__auto___67133]));
+if((i__4737__auto___67134 < len__4736__auto___67133)){
+args__4742__auto__.push((arguments[i__4737__auto___67134]));
 
-var G__67135 = (i__4737__auto___67133 + (1));
-i__4737__auto___67133 = G__67135;
+var G__67135 = (i__4737__auto___67134 + (1));
+i__4737__auto___67134 = G__67135;
 continue;
 } else {
 }
@@ -165,17 +165,17 @@ return cljs.core.sequence.cljs$core$IFn$_invoke$arity$1(cljs.core.seq(cljs.core.
 (sci.impl.multimethods.defmethod.cljs$lang$maxFixedArity = (4));
 
 /** @this {Function} */
-(sci.impl.multimethods.defmethod.cljs$lang$applyTo = (function (seq67121){
-var G__67122 = cljs.core.first(seq67121);
-var seq67121__$1 = cljs.core.next(seq67121);
-var G__67123 = cljs.core.first(seq67121__$1);
-var seq67121__$2 = cljs.core.next(seq67121__$1);
-var G__67124 = cljs.core.first(seq67121__$2);
-var seq67121__$3 = cljs.core.next(seq67121__$2);
-var G__67125 = cljs.core.first(seq67121__$3);
-var seq67121__$4 = cljs.core.next(seq67121__$3);
+(sci.impl.multimethods.defmethod.cljs$lang$applyTo = (function (seq67124){
+var G__67125 = cljs.core.first(seq67124);
+var seq67124__$1 = cljs.core.next(seq67124);
+var G__67126 = cljs.core.first(seq67124__$1);
+var seq67124__$2 = cljs.core.next(seq67124__$1);
+var G__67127 = cljs.core.first(seq67124__$2);
+var seq67124__$3 = cljs.core.next(seq67124__$2);
+var G__67128 = cljs.core.first(seq67124__$3);
+var seq67124__$4 = cljs.core.next(seq67124__$3);
 var self__4723__auto__ = this;
-return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__67122,G__67123,G__67124,G__67125,seq67121__$4);
+return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__67125,G__67126,G__67127,G__67128,seq67124__$4);
 }));
 
 

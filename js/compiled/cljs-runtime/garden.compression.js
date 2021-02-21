@@ -3,10 +3,10 @@ goog.provide('garden.compression');
  * Return a function which when given a string will return a map
  *   containing the chunk of text matched by re, it's size, and tag.
  */
-garden.compression.token_fn = (function garden$compression$token_fn(p__58986){
-var vec__58987 = p__58986;
-var tag = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__58987,(0),null);
-var re = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__58987,(1),null);
+garden.compression.token_fn = (function garden$compression$token_fn(p__58987){
+var vec__58988 = p__58987;
+var tag = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__58988,(0),null);
+var re = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__58988,(1),null);
 return (function (s){
 var temp__5735__auto__ = cljs.core.re_find(re,s);
 if(cljs.core.truth_(temp__5735__auto__)){
@@ -46,8 +46,8 @@ return garden.compression.tokenizer.cljs$core$IFn$_invoke$arity$variadic(argseq_
 (garden.compression.tokenizer.cljs$core$IFn$_invoke$arity$variadic = (function (tags_PLUS_regexes){
 var fs = cljs.core.map.cljs$core$IFn$_invoke$arity$2(garden.compression.token_fn,tags_PLUS_regexes);
 return (function (s){
-return cljs.core.some((function (p1__58991_SHARP_){
-return (p1__58991_SHARP_.cljs$core$IFn$_invoke$arity$1 ? p1__58991_SHARP_.cljs$core$IFn$_invoke$arity$1(s) : p1__58991_SHARP_.call(null,s));
+return cljs.core.some((function (p1__58992_SHARP_){
+return (p1__58992_SHARP_.cljs$core$IFn$_invoke$arity$1 ? p1__58992_SHARP_.cljs$core$IFn$_invoke$arity$1(s) : p1__58992_SHARP_.call(null,s));
 }),fs);
 });
 }));

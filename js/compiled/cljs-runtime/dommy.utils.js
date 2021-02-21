@@ -84,8 +84,8 @@ if((i >= (0))){
 if(dommy.utils.class_match_QMARK_(class_name,class$,i)){
 return i;
 } else {
-var G__60161 = (i + class$.length);
-start_from = G__60161;
+var G__60157 = (i + class$.length);
+start_from = G__60157;
 continue;
 }
 } else {
@@ -101,10 +101,10 @@ var class_len = class_name.length;
 var temp__5733__auto__ = dommy.utils.class_index(class_name,class$);
 if(cljs.core.truth_(temp__5733__auto__)){
 var i = temp__5733__auto__;
-var G__60162 = (function (){var end = (i + class$.length);
+var G__60159 = (function (){var end = (i + class$.length);
 return cljs.core.str.cljs$core$IFn$_invoke$arity$1((((end < class_len))?[cljs.core.str.cljs$core$IFn$_invoke$arity$1(class_name.substring((0),i)),cljs.core.str.cljs$core$IFn$_invoke$arity$1(class_name.substr((end + (1))))].join(''):class_name.substring((0),(i - (1)))));
 })();
-class_name = G__60162;
+class_name = G__60159;
 continue;
 } else {
 return class_name;

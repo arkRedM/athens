@@ -98,8 +98,8 @@ return athens.router.navigate(new cljs.core.Keyword(null,"home","home",-74557309
  * Don't navigate if already on the page.
  */
 athens.router.navigate_uid = (function athens$router$navigate_uid(var_args){
-var G__58483 = arguments.length;
-switch (G__58483) {
+var G__58487 = arguments.length;
+switch (G__58487) {
 case 1:
 return athens.router.navigate_uid.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 

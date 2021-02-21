@@ -12,10 +12,10 @@ if(cljs.core.fn_QMARK_(callback_pred)){
 return callback_pred;
 } else {
 if((callback_pred instanceof cljs.core.Keyword)){
-return (function (p__64975){
-var vec__64976 = p__64975;
-var event_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__64976,(0),null);
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__64976,(1),null);
+return (function (p__64976){
+var vec__64977 = p__64976;
+var event_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__64977,(0),null);
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__64977,(1),null);
 return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(callback_pred,event_id);
 });
 } else {
