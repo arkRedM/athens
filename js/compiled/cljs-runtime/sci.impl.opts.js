@@ -96,8 +96,8 @@ break;
 /**
  * Initializes options
  */
-sci.impl.opts.init = (function sci$impl$opts$init(p__67556){
-var map__67559 = p__67556;
+sci.impl.opts.init = (function sci$impl$opts$init(p__67557){
+var map__67559 = p__67557;
 var map__67559__$1 = (((((!((map__67559 == null))))?(((((map__67559.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__67559.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__67559):map__67559);
 var features = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__67559__$1,new cljs.core.Keyword(null,"features","features",-1146962336));
 var namespaces = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__67559__$1,new cljs.core.Keyword(null,"namespaces","namespaces",-1444157469));

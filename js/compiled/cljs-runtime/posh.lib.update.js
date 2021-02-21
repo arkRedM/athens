@@ -13,12 +13,12 @@ var eid = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40386,(3),null);
 var analysis = posh.lib.pull_analyze.pull_analyze(dcfg,cljs.core.cons(new cljs.core.Keyword(null,"patterns","patterns",1164082024),retrieve),posh.lib.db.poshdb__GT_analyze_db(posh_tree,poshdb),pull_pattern,eid);
 return cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([analysis,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"reload-patterns","reload-patterns",-1261746666),new cljs.core.Keyword(null,"patterns","patterns",1164082024).cljs$core$IFn$_invoke$arity$1(analysis),new cljs.core.Keyword(null,"reload-fn","reload-fn",-1150160860),posh.lib.update.update_pull], null)], 0)),new cljs.core.Keyword(null,"patterns","patterns",1164082024));
 });
-posh.lib.update.update_filter_pull = (function posh$lib$update$update_filter_pull(p__40391,storage_key){
-var map__40392 = p__40391;
-var map__40392__$1 = (((((!((map__40392 == null))))?(((((map__40392.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__40392.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__40392):map__40392);
-var posh_tree = map__40392__$1;
-var dcfg = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40392__$1,new cljs.core.Keyword(null,"dcfg","dcfg",-880371016));
-var retrieve = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40392__$1,new cljs.core.Keyword(null,"retrieve","retrieve",-657129560));
+posh.lib.update.update_filter_pull = (function posh$lib$update$update_filter_pull(p__40389,storage_key){
+var map__40390 = p__40389;
+var map__40390__$1 = (((((!((map__40390 == null))))?(((((map__40390.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__40390.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__40390):map__40390);
+var posh_tree = map__40390__$1;
+var dcfg = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40390__$1,new cljs.core.Keyword(null,"dcfg","dcfg",-880371016));
+var retrieve = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40390__$1,new cljs.core.Keyword(null,"retrieve","retrieve",-657129560));
 var vec__40394 = storage_key;
 var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40394,(0),null);
 var poshdb = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40394,(1),null);

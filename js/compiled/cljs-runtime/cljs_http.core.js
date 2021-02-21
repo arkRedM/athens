@@ -149,15 +149,15 @@ return cljs.core.async.close_BANG_(channel);
 }));
 
 if(cljs.core.truth_(progress)){
-var listener_65966 = (function (direction,evt){
+var listener_65970 = (function (direction,evt){
 return cljs.core.async.put_BANG_.cljs$core$IFn$_invoke$arity$2(progress,cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"direction","direction",-633359395),direction,new cljs.core.Keyword(null,"loaded","loaded",-1246482293),evt.loaded], null),(cljs.core.truth_(evt.lengthComputable)?new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"total","total",1916810418),evt.total], null):null)], 0)));
 });
-var G__65919_65967 = xhr;
-G__65919_65967.setProgressEventsEnabled(true);
+var G__65919_65971 = xhr;
+G__65919_65971.setProgressEventsEnabled(true);
 
-G__65919_65967.listen(goog.net.EventType.UPLOAD_PROGRESS,cljs.core.partial.cljs$core$IFn$_invoke$arity$2(listener_65966,new cljs.core.Keyword(null,"upload","upload",-255769218)));
+G__65919_65971.listen(goog.net.EventType.UPLOAD_PROGRESS,cljs.core.partial.cljs$core$IFn$_invoke$arity$2(listener_65970,new cljs.core.Keyword(null,"upload","upload",-255769218)));
 
-G__65919_65967.listen(goog.net.EventType.DOWNLOAD_PROGRESS,cljs.core.partial.cljs$core$IFn$_invoke$arity$2(listener_65966,new cljs.core.Keyword(null,"download","download",-300081668)));
+G__65919_65971.listen(goog.net.EventType.DOWNLOAD_PROGRESS,cljs.core.partial.cljs$core$IFn$_invoke$arity$2(listener_65970,new cljs.core.Keyword(null,"download","download",-300081668)));
 
 } else {
 }
@@ -165,7 +165,7 @@ G__65919_65967.listen(goog.net.EventType.DOWNLOAD_PROGRESS,cljs.core.partial.clj
 xhr.send(request_url,method,body,headers__$1);
 
 if(cljs.core.truth_(cancel)){
-var c__62648__auto___65972 = cljs.core.async.chan.cljs$core$IFn$_invoke$arity$1((1));
+var c__62648__auto___65973 = cljs.core.async.chan.cljs$core$IFn$_invoke$arity$1((1));
 cljs.core.async.impl.dispatch.run((function (){
 var f__62649__auto__ = (function (){var switch__62612__auto__ = (function (state_65930){
 var state_val_65931 = (state_65930[(1)]);
@@ -288,7 +288,7 @@ return cljs_http$core$xhr_$_state_machine__62613__auto__;
 })()
 })();
 var state__62650__auto__ = (function (){var statearr_65941 = f__62649__auto__();
-(statearr_65941[(6)] = c__62648__auto___65972);
+(statearr_65941[(6)] = c__62648__auto___65973);
 
 return statearr_65941;
 })();
