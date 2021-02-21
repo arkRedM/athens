@@ -3,19 +3,19 @@ goog.provide('dommy.utils');
  * Dissociate this keyseq from m, removing any empty maps created as a result
  * (including at the top-level).
  */
-dommy.utils.dissoc_in = (function dommy$utils$dissoc_in(m,p__60138){
-var vec__60139 = p__60138;
-var seq__60140 = cljs.core.seq(vec__60139);
-var first__60141 = cljs.core.first(seq__60140);
-var seq__60140__$1 = cljs.core.next(seq__60140);
-var k = first__60141;
-var ks = seq__60140__$1;
+dommy.utils.dissoc_in = (function dommy$utils$dissoc_in(m,p__60151){
+var vec__60152 = p__60151;
+var seq__60153 = cljs.core.seq(vec__60152);
+var first__60154 = cljs.core.first(seq__60153);
+var seq__60153__$1 = cljs.core.next(seq__60153);
+var k = first__60154;
+var ks = seq__60153__$1;
 if(cljs.core.truth_(m)){
 var temp__5733__auto__ = (function (){var and__4115__auto__ = ks;
 if(and__4115__auto__){
-var G__60144 = (m.cljs$core$IFn$_invoke$arity$1 ? m.cljs$core$IFn$_invoke$arity$1(k) : m.call(null,k));
-var G__60145 = ks;
-return (dommy.utils.dissoc_in.cljs$core$IFn$_invoke$arity$2 ? dommy.utils.dissoc_in.cljs$core$IFn$_invoke$arity$2(G__60144,G__60145) : dommy.utils.dissoc_in.call(null,G__60144,G__60145));
+var G__60157 = (m.cljs$core$IFn$_invoke$arity$1 ? m.cljs$core$IFn$_invoke$arity$1(k) : m.call(null,k));
+var G__60158 = ks;
+return (dommy.utils.dissoc_in.cljs$core$IFn$_invoke$arity$2 ? dommy.utils.dissoc_in.cljs$core$IFn$_invoke$arity$2(G__60157,G__60158) : dommy.utils.dissoc_in.call(null,G__60157,G__60158));
 } else {
 return and__4115__auto__;
 }
@@ -44,11 +44,11 @@ return Array.prototype.slice.call(array_like);
  */
 dommy.utils.as_str = (function dommy$utils$as_str(s){
 if((s instanceof cljs.core.Keyword)){
-return [(function (){var G__60153 = cljs.core.namespace(s);
-if((G__60153 == null)){
+return [(function (){var G__60162 = cljs.core.namespace(s);
+if((G__60162 == null)){
 return null;
 } else {
-return [G__60153,"/"].join('');
+return [G__60162,"/"].join('');
 }
 })(),cljs.core.name(s)].join('');
 } else {
@@ -84,8 +84,8 @@ if((i >= (0))){
 if(dommy.utils.class_match_QMARK_(class_name,class$,i)){
 return i;
 } else {
-var G__60164 = (i + class$.length);
-start_from = G__60164;
+var G__60166 = (i + class$.length);
+start_from = G__60166;
 continue;
 }
 } else {

@@ -19,7 +19,7 @@ return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(elements_so_far,elmt);
  * Transforms the Instaparse output tree to an abstract syntax tree for Athens markup.
  */
 athens.parser.transform_to_ast = (function athens$parser$transform_to_ast(tree){
-var G__53147 = new cljs.core.PersistentArrayMap(null, 8, [new cljs.core.Keyword(null,"block","block",664686210),(function() { 
+var G__53150 = new cljs.core.PersistentArrayMap(null, 8, [new cljs.core.Keyword(null,"block","block",664686210),(function() { 
 var G__53187__delegate = function (raw_contents){
 return cljs.core.into.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"block","block",664686210)], null),athens.parser.combine_adjacent_strings(raw_contents));
 };
@@ -39,9 +39,9 @@ return G__53187__delegate(raw_contents);
 G__53187.cljs$core$IFn$_invoke$arity$variadic = G__53187__delegate;
 return G__53187;
 })()
-,new cljs.core.Keyword(null,"url-image","url-image",535142411),(function (p__53150,url){
-var vec__53151 = p__53150;
-var text_contents = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__53151,(0),null);
+,new cljs.core.Keyword(null,"url-image","url-image",535142411),(function (p__53153,url){
+var vec__53155 = p__53153;
+var text_contents = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__53155,(0),null);
 return cljs.core.into.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"url-image","url-image",535142411),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"url","url",276297046),url,new cljs.core.Keyword(null,"alt","alt",-3214426),text_contents], null)], null));
 }),new cljs.core.Keyword(null,"url-link","url-link",1615670141),(function (text_contents,url){
 return cljs.core.into.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"url-link","url-link",1615670141),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"url","url",276297046),url], null)], null),text_contents);
@@ -110,8 +110,8 @@ return G__53196;
 ,new cljs.core.Keyword(null,"component","component",1555936782),(function (raw_content_string){
 return cljs.core.into.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"component","component",1555936782),raw_content_string], null),cljs.core.rest((athens.parser.block_parser.cljs$core$IFn$_invoke$arity$1 ? athens.parser.block_parser.cljs$core$IFn$_invoke$arity$1(raw_content_string) : athens.parser.block_parser.call(null,raw_content_string))));
 })], null);
-var G__53148 = tree;
-return (instaparse.core.transform.cljs$core$IFn$_invoke$arity$2 ? instaparse.core.transform.cljs$core$IFn$_invoke$arity$2(G__53147,G__53148) : instaparse.core.transform.call(null,G__53147,G__53148));
+var G__53151 = tree;
+return (instaparse.core.transform.cljs$core$IFn$_invoke$arity$2 ? instaparse.core.transform.cljs$core$IFn$_invoke$arity$2(G__53150,G__53151) : instaparse.core.transform.call(null,G__53150,G__53151));
 });
 /**
  * Converts a string of block syntax to an abstract syntax tree for Athens markup.

@@ -61,7 +61,7 @@ return cljs$tools$reader$reader_types$Reader$peek_char$dyn_24240(reader);
  */
 cljs.tools.reader.reader_types.IPushbackReader = function(){};
 
-var cljs$tools$reader$reader_types$IPushbackReader$unread$dyn_24241 = (function (reader,ch){
+var cljs$tools$reader$reader_types$IPushbackReader$unread$dyn_24243 = (function (reader,ch){
 var x__4428__auto__ = (((reader == null))?null:reader);
 var m__4429__auto__ = (cljs.tools.reader.reader_types.unread[goog.typeOf(x__4428__auto__)]);
 if((!((m__4429__auto__ == null)))){
@@ -82,7 +82,7 @@ cljs.tools.reader.reader_types.unread = (function cljs$tools$reader$reader_types
 if((((!((reader == null)))) && ((!((reader.cljs$tools$reader$reader_types$IPushbackReader$unread$arity$2 == null)))))){
 return reader.cljs$tools$reader$reader_types$IPushbackReader$unread$arity$2(reader,ch);
 } else {
-return cljs$tools$reader$reader_types$IPushbackReader$unread$dyn_24241(reader,ch);
+return cljs$tools$reader$reader_types$IPushbackReader$unread$dyn_24243(reader,ch);
 }
 });
 
@@ -92,7 +92,7 @@ return cljs$tools$reader$reader_types$IPushbackReader$unread$dyn_24241(reader,ch
  */
 cljs.tools.reader.reader_types.IndexingReader = function(){};
 
-var cljs$tools$reader$reader_types$IndexingReader$get_line_number$dyn_24244 = (function (reader){
+var cljs$tools$reader$reader_types$IndexingReader$get_line_number$dyn_24245 = (function (reader){
 var x__4428__auto__ = (((reader == null))?null:reader);
 var m__4429__auto__ = (cljs.tools.reader.reader_types.get_line_number[goog.typeOf(x__4428__auto__)]);
 if((!((m__4429__auto__ == null)))){
@@ -113,11 +113,11 @@ cljs.tools.reader.reader_types.get_line_number = (function cljs$tools$reader$rea
 if((((!((reader == null)))) && ((!((reader.cljs$tools$reader$reader_types$IndexingReader$get_line_number$arity$1 == null)))))){
 return reader.cljs$tools$reader$reader_types$IndexingReader$get_line_number$arity$1(reader);
 } else {
-return cljs$tools$reader$reader_types$IndexingReader$get_line_number$dyn_24244(reader);
+return cljs$tools$reader$reader_types$IndexingReader$get_line_number$dyn_24245(reader);
 }
 });
 
-var cljs$tools$reader$reader_types$IndexingReader$get_column_number$dyn_24246 = (function (reader){
+var cljs$tools$reader$reader_types$IndexingReader$get_column_number$dyn_24249 = (function (reader){
 var x__4428__auto__ = (((reader == null))?null:reader);
 var m__4429__auto__ = (cljs.tools.reader.reader_types.get_column_number[goog.typeOf(x__4428__auto__)]);
 if((!((m__4429__auto__ == null)))){
@@ -138,7 +138,7 @@ cljs.tools.reader.reader_types.get_column_number = (function cljs$tools$reader$r
 if((((!((reader == null)))) && ((!((reader.cljs$tools$reader$reader_types$IndexingReader$get_column_number$arity$1 == null)))))){
 return reader.cljs$tools$reader$reader_types$IndexingReader$get_column_number$arity$1(reader);
 } else {
-return cljs$tools$reader$reader_types$IndexingReader$get_column_number$dyn_24246(reader);
+return cljs$tools$reader$reader_types$IndexingReader$get_column_number$dyn_24249(reader);
 }
 });
 

@@ -1,7 +1,7 @@
 goog.provide('instaparse.print');
 instaparse.print.paren_for_tags = (function instaparse$print$paren_for_tags(tag_set,hidden_QMARK_,parser){
-if(cljs.core.truth_(((cljs.core.not(hidden_QMARK_))?(function (){var G__51035 = (parser.cljs$core$IFn$_invoke$arity$1 ? parser.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"tag","tag",-1290361223)) : parser.call(null,new cljs.core.Keyword(null,"tag","tag",-1290361223)));
-return (tag_set.cljs$core$IFn$_invoke$arity$1 ? tag_set.cljs$core$IFn$_invoke$arity$1(G__51035) : tag_set.call(null,G__51035));
+if(cljs.core.truth_(((cljs.core.not(hidden_QMARK_))?(function (){var G__51033 = (parser.cljs$core$IFn$_invoke$arity$1 ? parser.cljs$core$IFn$_invoke$arity$1(new cljs.core.Keyword(null,"tag","tag",-1290361223)) : parser.call(null,new cljs.core.Keyword(null,"tag","tag",-1290361223)));
+return (tag_set.cljs$core$IFn$_invoke$arity$1 ? tag_set.cljs$core$IFn$_invoke$arity$1(G__51033) : tag_set.call(null,G__51033));
 })():false))){
 return ["(",cljs.core.str.cljs$core$IFn$_invoke$arity$1((instaparse.print.combinators__GT_str.cljs$core$IFn$_invoke$arity$2 ? instaparse.print.combinators__GT_str.cljs$core$IFn$_invoke$arity$2(parser,false) : instaparse.print.combinators__GT_str.call(null,parser,false))),")"].join('');
 } else {
@@ -13,8 +13,8 @@ instaparse.print.paren_for_compound = cljs.core.partial.cljs$core$IFn$_invoke$ar
  * Replaces whitespace characters with escape sequences for better printing
  */
 instaparse.print.regexp_replace = (function instaparse$print$regexp_replace(s){
-var G__51036 = s;
-switch (G__51036) {
+var G__51034 = s;
+switch (G__51034) {
 case "\n":
 return "\\n";
 

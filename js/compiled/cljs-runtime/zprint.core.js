@@ -224,9 +224,9 @@ return actual_options;
  */
 zprint.core.zprint_STAR_ = (function zprint$core$zprint_STAR_(coll,special_option,actual_options){
 if(cljs.core.truth_(special_option)){
-var G__31243 = special_option;
-var G__31243__$1 = (((G__31243 instanceof cljs.core.Keyword))?G__31243.fqn:null);
-switch (G__31243__$1) {
+var G__31240 = special_option;
+var G__31240__$1 = (((G__31240 instanceof cljs.core.Keyword))?G__31240.fqn:null);
+switch (G__31240__$1) {
 case "explain":
 return zprint.core.fzprint_style(zprint.config.get_explained_options(),zprint.config.merge_deep.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([zprint.config.get_default_options(),actual_options], 0)));
 
@@ -273,10 +273,10 @@ return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(cljs.core.dissoc.cljs$core$
 /**
  * Select the elements from start to end from a vector.
  */
-zprint.core.range_vec = (function zprint$core$range_vec(v,p__31251){
-var vec__31253 = p__31251;
-var start = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__31253,(0),null);
-var end = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__31253,(1),null);
+zprint.core.range_vec = (function zprint$core$range_vec(v,p__31246){
+var vec__31247 = p__31246;
+var start = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__31247,(0),null);
+var end = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__31247,(1),null);
 return cljs.core.take.cljs$core$IFn$_invoke$arity$2((end - start),cljs.core.drop.cljs$core$IFn$_invoke$arity$2(start,v));
 });
 /**
@@ -366,13 +366,13 @@ return color_style;
 (zprint.core.zprint_str_internal.cljs$lang$maxFixedArity = (2));
 
 /** @this {Function} */
-(zprint.core.zprint_str_internal.cljs$lang$applyTo = (function (seq31256){
-var G__31257 = cljs.core.first(seq31256);
-var seq31256__$1 = cljs.core.next(seq31256);
-var G__31258 = cljs.core.first(seq31256__$1);
-var seq31256__$2 = cljs.core.next(seq31256__$1);
+(zprint.core.zprint_str_internal.cljs$lang$applyTo = (function (seq31253){
+var G__31254 = cljs.core.first(seq31253);
+var seq31253__$1 = cljs.core.next(seq31253);
+var G__31255 = cljs.core.first(seq31253__$1);
+var seq31253__$2 = cljs.core.next(seq31253__$1);
 var self__4723__auto__ = this;
-return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__31257,G__31258,seq31256__$2);
+return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__31254,G__31255,seq31253__$2);
 }));
 
 /**
@@ -406,14 +406,14 @@ throw (new Error(["No definition found for a function named: ",cljs.core.str.clj
  */
 zprint.core.zprint_str = (function zprint$core$zprint_str(var_args){
 var args__4742__auto__ = [];
-var len__4736__auto___31305 = arguments.length;
-var i__4737__auto___31306 = (0);
+var len__4736__auto___31303 = arguments.length;
+var i__4737__auto___31304 = (0);
 while(true){
-if((i__4737__auto___31306 < len__4736__auto___31305)){
-args__4742__auto__.push((arguments[i__4737__auto___31306]));
+if((i__4737__auto___31304 < len__4736__auto___31303)){
+args__4742__auto__.push((arguments[i__4737__auto___31304]));
 
-var G__31307 = (i__4737__auto___31306 + (1));
-i__4737__auto___31306 = G__31307;
+var G__31305 = (i__4737__auto___31304 + (1));
+i__4737__auto___31304 = G__31305;
 continue;
 } else {
 }
@@ -456,14 +456,14 @@ return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__31273,seq31272
  */
 zprint.core.czprint_str = (function zprint$core$czprint_str(var_args){
 var args__4742__auto__ = [];
-var len__4736__auto___31308 = arguments.length;
-var i__4737__auto___31309 = (0);
+var len__4736__auto___31306 = arguments.length;
+var i__4737__auto___31307 = (0);
 while(true){
-if((i__4737__auto___31309 < len__4736__auto___31308)){
-args__4742__auto__.push((arguments[i__4737__auto___31309]));
+if((i__4737__auto___31307 < len__4736__auto___31306)){
+args__4742__auto__.push((arguments[i__4737__auto___31307]));
 
-var G__31310 = (i__4737__auto___31309 + (1));
-i__4737__auto___31309 = G__31310;
+var G__31308 = (i__4737__auto___31307 + (1));
+i__4737__auto___31307 = G__31308;
 continue;
 } else {
 }
@@ -481,11 +481,11 @@ return cljs.core.apply.cljs$core$IFn$_invoke$arity$4(zprint.core.zprint_str_inte
 (zprint.core.czprint_str.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(zprint.core.czprint_str.cljs$lang$applyTo = (function (seq31279){
-var G__31280 = cljs.core.first(seq31279);
-var seq31279__$1 = cljs.core.next(seq31279);
+(zprint.core.czprint_str.cljs$lang$applyTo = (function (seq31274){
+var G__31275 = cljs.core.first(seq31274);
+var seq31274__$1 = cljs.core.next(seq31274);
 var self__4723__auto__ = this;
-return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__31280,seq31279__$1);
+return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__31275,seq31274__$1);
 }));
 
 /**
@@ -531,11 +531,11 @@ return cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq
 (zprint.core.zprint.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(zprint.core.zprint.cljs$lang$applyTo = (function (seq31281){
-var G__31282 = cljs.core.first(seq31281);
-var seq31281__$1 = cljs.core.next(seq31281);
+(zprint.core.zprint.cljs$lang$applyTo = (function (seq31276){
+var G__31277 = cljs.core.first(seq31276);
+var seq31276__$1 = cljs.core.next(seq31276);
 var self__4723__auto__ = this;
-return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__31282,seq31281__$1);
+return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__31277,seq31276__$1);
 }));
 
 /**
@@ -581,11 +581,11 @@ return cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq
 (zprint.core.czprint.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(zprint.core.czprint.cljs$lang$applyTo = (function (seq31284){
-var G__31285 = cljs.core.first(seq31284);
-var seq31284__$1 = cljs.core.next(seq31284);
+(zprint.core.czprint.cljs$lang$applyTo = (function (seq31278){
+var G__31279 = cljs.core.first(seq31278);
+var seq31278__$1 = cljs.core.next(seq31278);
 var self__4723__auto__ = this;
-return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__31285,seq31284__$1);
+return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__31279,seq31278__$1);
 }));
 
 /**

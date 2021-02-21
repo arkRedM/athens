@@ -8,8 +8,8 @@ spec_tools.swagger.core.accept_spec = (function (){var method_table__4619__auto_
 var prefer_table__4620__auto__ = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentArrayMap.EMPTY);
 var method_cache__4621__auto__ = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentArrayMap.EMPTY);
 var cached_hierarchy__4622__auto__ = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentArrayMap.EMPTY);
-var hierarchy__4623__auto__ = cljs.core.get.cljs$core$IFn$_invoke$arity$3(new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"default","default",-1987822328),new cljs.core.Keyword("spec-tools.swagger.core","default","spec-tools.swagger.core/default",1361779456)], null),new cljs.core.Keyword(null,"hierarchy","hierarchy",-1053470341),(function (){var fexpr__56691 = cljs.core.get_global_hierarchy;
-return (fexpr__56691.cljs$core$IFn$_invoke$arity$0 ? fexpr__56691.cljs$core$IFn$_invoke$arity$0() : fexpr__56691.call(null));
+var hierarchy__4623__auto__ = cljs.core.get.cljs$core$IFn$_invoke$arity$3(new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"default","default",-1987822328),new cljs.core.Keyword("spec-tools.swagger.core","default","spec-tools.swagger.core/default",1361779456)], null),new cljs.core.Keyword(null,"hierarchy","hierarchy",-1053470341),(function (){var fexpr__56692 = cljs.core.get_global_hierarchy;
+return (fexpr__56692.cljs$core$IFn$_invoke$arity$0 ? fexpr__56692.cljs$core$IFn$_invoke$arity$0() : fexpr__56692.call(null));
 })());
 return (new cljs.core.MultiFn(cljs.core.symbol.cljs$core$IFn$_invoke$arity$2("spec-tools.swagger.core","accept-spec"),spec_tools.swagger.core.spec_dispatch,new cljs.core.Keyword("spec-tools.swagger.core","default","spec-tools.swagger.core/default",1361779456),hierarchy__4623__auto__,method_table__4619__auto__,prefer_table__4620__auto__,method_cache__4621__auto__,cached_hierarchy__4622__auto__));
 })();
@@ -50,18 +50,18 @@ return new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"ty
 spec_tools.swagger.core.accept_spec.cljs$core$IMultiFn$_add_method$arity$3(null,new cljs.core.Keyword("spec-tools.visitor","set","spec-tools.visitor/set",1650075415),(function (_,___$1,children,___$2){
 return new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"enum","enum",1679018432),children,new cljs.core.Keyword(null,"type","type",1174270348),"string"], null);
 }));
-spec_tools.swagger.core.accept_spec.cljs$core$IMultiFn$_add_method$arity$3(null,new cljs.core.Symbol("clojure.spec.alpha","nilable","clojure.spec.alpha/nilable",-1718644550,null),(function (_,___$1,children,p__56692){
-var map__56693 = p__56692;
-var map__56693__$1 = (((((!((map__56693 == null))))?(((((map__56693.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__56693.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__56693):map__56693);
-var type = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__56693__$1,new cljs.core.Keyword(null,"type","type",1174270348));
-var in$ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__56693__$1,new cljs.core.Keyword(null,"in","in",-1531184865));
+spec_tools.swagger.core.accept_spec.cljs$core$IMultiFn$_add_method$arity$3(null,new cljs.core.Symbol("clojure.spec.alpha","nilable","clojure.spec.alpha/nilable",-1718644550,null),(function (_,___$1,children,p__56693){
+var map__56694 = p__56693;
+var map__56694__$1 = (((((!((map__56694 == null))))?(((((map__56694.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__56694.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__56694):map__56694);
+var type = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__56694__$1,new cljs.core.Keyword(null,"type","type",1174270348));
+var in$ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__56694__$1,new cljs.core.Keyword(null,"in","in",-1531184865));
 var k = ((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(type,new cljs.core.Keyword(null,"parameter","parameter",1978789597))) && (cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(in$,new cljs.core.Keyword(null,"body","body",-2049205669)))))?new cljs.core.Keyword(null,"allowEmptyValue","allowEmptyValue",-1066530890):new cljs.core.Keyword(null,"x-nullable","x-nullable",1492681247));
 return cljs.core.assoc.cljs$core$IFn$_invoke$arity$3(spec_tools.impl.unwrap(children),k,true);
 }));
 spec_tools.swagger.core.accept_spec.cljs$core$IMultiFn$_add_method$arity$3(null,new cljs.core.Keyword("spec-tools.visitor","spec","spec-tools.visitor/spec",1770325200),(function (dispatch,spec,children,options){
-var vec__56695 = spec_tools.impl.extract_form(spec);
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__56695,(0),null);
-var data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__56695,(1),null);
+var vec__56696 = spec_tools.impl.extract_form(spec);
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__56696,(0),null);
+var data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__56696,(1),null);
 var swagger_meta = spec_tools.impl.unlift_keys(data,"swagger");
 return cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([spec_tools.json_schema.accept_spec.cljs$core$IFn$_invoke$arity$4(dispatch,spec,children,options),swagger_meta], 0));
 }));
@@ -76,8 +76,8 @@ return spec_tools.json_schema.accept_spec.cljs$core$IFn$_invoke$arity$4(dispatch
  *   not true.
  */
 spec_tools.swagger.core.transform = (function spec_tools$swagger$core$transform(var_args){
-var G__56699 = arguments.length;
-switch (G__56699) {
+var G__56700 = arguments.length;
+switch (G__56700) {
 case 1:
 return spec_tools.swagger.core.transform.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -196,8 +196,8 @@ var $__$1 = (cljs.core.truth_(new cljs.core.Keyword(null,"schema","schema",-1582
 return cljs.core.update.cljs$core$IFn$_invoke$arity$3($__$1,new cljs.core.Keyword(null,"description","description",-1428560544),cljs.core.fnil.cljs$core$IFn$_invoke$arity$2(cljs.core.identity,""));
 })()], null));
 
-var G__56734 = (i__56713 + (1));
-i__56713 = G__56734;
+var G__56743 = (i__56713 + (1));
+i__56713 = G__56743;
 continue;
 } else {
 return true;
@@ -279,8 +279,8 @@ return x__$1;
  *   with the `spec-tools.swagger.core/expand` multimethod.
  */
 spec_tools.swagger.core.swagger_spec = (function spec_tools$swagger$core$swagger_spec(var_args){
-var G__56730 = arguments.length;
-switch (G__56730) {
+var G__56731 = arguments.length;
+switch (G__56731) {
 case 1:
 return spec_tools.swagger.core.swagger_spec.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
