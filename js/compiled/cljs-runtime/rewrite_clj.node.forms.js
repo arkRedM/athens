@@ -248,11 +248,11 @@ return (new rewrite_clj.node.forms.FormsNode(children,null,null,null));
  * Factory function for rewrite-clj.node.forms/FormsNode, taking a map of keywords to field values.
  */
 rewrite_clj.node.forms.map__GT_FormsNode = (function rewrite_clj$node$forms$map__GT_FormsNode(G__29368){
-var extmap__4419__auto__ = (function (){var G__29387 = cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(G__29368,new cljs.core.Keyword(null,"children","children",-940561982));
+var extmap__4419__auto__ = (function (){var G__29377 = cljs.core.dissoc.cljs$core$IFn$_invoke$arity$2(G__29368,new cljs.core.Keyword(null,"children","children",-940561982));
 if(cljs.core.record_QMARK_(G__29368)){
-return cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,G__29387);
+return cljs.core.into.cljs$core$IFn$_invoke$arity$2(cljs.core.PersistentArrayMap.EMPTY,G__29377);
 } else {
-return G__29387;
+return G__29377;
 }
 })();
 return (new rewrite_clj.node.forms.FormsNode(new cljs.core.Keyword(null,"children","children",-940561982).cljs$core$IFn$_invoke$arity$1(G__29368),null,cljs.core.not_empty(extmap__4419__auto__),null));

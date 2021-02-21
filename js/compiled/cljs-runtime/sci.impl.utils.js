@@ -19,8 +19,8 @@ return new cljs.core.Keyword("sci.impl","op","sci.impl/op",950953978).cljs$core$
 });
 sci.impl.utils.kw_identical_QMARK_ = cljs.core.keyword_identical_QMARK_;
 sci.impl.utils.gensym_STAR_ = (function sci$impl$utils$gensym_STAR_(var_args){
-var G__66659 = arguments.length;
-switch (G__66659) {
+var G__66658 = arguments.length;
+switch (G__66658) {
 case 0:
 return sci.impl.utils.gensym_STAR_.cljs$core$IFn$_invoke$arity$0();
 
@@ -171,13 +171,13 @@ return obj;
 (sci.impl.utils.vary_meta_STAR_.cljs$lang$maxFixedArity = (2));
 
 /** @this {Function} */
-(sci.impl.utils.vary_meta_STAR_.cljs$lang$applyTo = (function (seq66669){
-var G__66670 = cljs.core.first(seq66669);
-var seq66669__$1 = cljs.core.next(seq66669);
-var G__66671 = cljs.core.first(seq66669__$1);
-var seq66669__$2 = cljs.core.next(seq66669__$1);
+(sci.impl.utils.vary_meta_STAR_.cljs$lang$applyTo = (function (seq66668){
+var G__66669 = cljs.core.first(seq66668);
+var seq66668__$1 = cljs.core.next(seq66668);
+var G__66670 = cljs.core.first(seq66668__$1);
+var seq66668__$2 = cljs.core.next(seq66668__$1);
 var self__4723__auto__ = this;
-return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__66670,G__66671,seq66669__$2);
+return self__4723__auto__.cljs$core$IFn$_invoke$arity$variadic(G__66669,G__66670,seq66668__$2);
 }));
 
 /**
@@ -211,8 +211,8 @@ return obj;
 }
 });
 sci.impl.utils.strip_core_ns = (function sci$impl$utils$strip_core_ns(sym){
-var G__66684 = cljs.core.namespace(sym);
-switch (G__66684) {
+var G__66683 = cljs.core.namespace(sym);
+switch (G__66683) {
 case "clojure.core":
 case "cljs.core":
 return cljs.core.symbol.cljs$core$IFn$_invoke$arity$1(cljs.core.name(sym));
@@ -233,10 +233,10 @@ if(cljs.core.list_QMARK_(form)){
 return cljs.core.with_meta(cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.list,cljs.core.map.cljs$core$IFn$_invoke$arity$2(inner,form)),cljs.core.meta(form));
 } else {
 if(cljs.core.map_entry_QMARK_(form)){
-return (new cljs.core.MapEntry((function (){var G__66688 = cljs.core.key(form);
-return (inner.cljs$core$IFn$_invoke$arity$1 ? inner.cljs$core$IFn$_invoke$arity$1(G__66688) : inner.call(null,G__66688));
-})(),(function (){var G__66689 = cljs.core.val(form);
-return (inner.cljs$core$IFn$_invoke$arity$1 ? inner.cljs$core$IFn$_invoke$arity$1(G__66689) : inner.call(null,G__66689));
+return (new cljs.core.MapEntry((function (){var G__66686 = cljs.core.key(form);
+return (inner.cljs$core$IFn$_invoke$arity$1 ? inner.cljs$core$IFn$_invoke$arity$1(G__66686) : inner.call(null,G__66686));
+})(),(function (){var G__66687 = cljs.core.val(form);
+return (inner.cljs$core$IFn$_invoke$arity$1 ? inner.cljs$core$IFn$_invoke$arity$1(G__66687) : inner.call(null,G__66687));
 })(),null));
 } else {
 if(cljs.core.seq_QMARK_(form)){

@@ -1,14 +1,14 @@
 goog.provide('instaparse.util');
 instaparse.util.throw_runtime_exception = (function instaparse$util$throw_runtime_exception(var_args){
 var args__4742__auto__ = [];
-var len__4736__auto___51105 = arguments.length;
-var i__4737__auto___51106 = (0);
+var len__4736__auto___51126 = arguments.length;
+var i__4737__auto___51127 = (0);
 while(true){
-if((i__4737__auto___51106 < len__4736__auto___51105)){
-args__4742__auto__.push((arguments[i__4737__auto___51106]));
+if((i__4737__auto___51127 < len__4736__auto___51126)){
+args__4742__auto__.push((arguments[i__4737__auto___51127]));
 
-var G__51107 = (i__4737__auto___51106 + (1));
-i__4737__auto___51106 = G__51107;
+var G__51132 = (i__4737__auto___51127 + (1));
+i__4737__auto___51127 = G__51132;
 continue;
 } else {
 }
@@ -34,14 +34,14 @@ return self__4724__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq
 
 instaparse.util.throw_illegal_argument_exception = (function instaparse$util$throw_illegal_argument_exception(var_args){
 var args__4742__auto__ = [];
-var len__4736__auto___51124 = arguments.length;
-var i__4737__auto___51125 = (0);
+var len__4736__auto___51141 = arguments.length;
+var i__4737__auto___51142 = (0);
 while(true){
-if((i__4737__auto___51125 < len__4736__auto___51124)){
-args__4742__auto__.push((arguments[i__4737__auto___51125]));
+if((i__4737__auto___51142 < len__4736__auto___51141)){
+args__4742__auto__.push((arguments[i__4737__auto___51142]));
 
-var G__51127 = (i__4737__auto___51125 + (1));
-i__4737__auto___51125 = G__51127;
+var G__51143 = (i__4737__auto___51142 + (1));
+i__4737__auto___51142 = G__51143;
 continue;
 } else {
 }
@@ -66,13 +66,13 @@ return self__4724__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq
 }));
 
 instaparse.util.regexp_flags = (function instaparse$util$regexp_flags(re){
-var G__51097 = "";
-var G__51097__$1 = (cljs.core.truth_(re.ignoreCase)?[G__51097,"i"].join(''):G__51097);
-var G__51097__$2 = (cljs.core.truth_(re.multiline)?[G__51097__$1,"m"].join(''):G__51097__$1);
+var G__51100 = "";
+var G__51100__$1 = (cljs.core.truth_(re.ignoreCase)?[G__51100,"i"].join(''):G__51100);
+var G__51100__$2 = (cljs.core.truth_(re.multiline)?[G__51100__$1,"m"].join(''):G__51100__$1);
 if(cljs.core.truth_(re.unicode)){
-return [G__51097__$2,"u"].join('');
+return [G__51100__$2,"u"].join('');
 } else {
-return G__51097__$2;
+return G__51100__$2;
 }
 });
 
