@@ -292,8 +292,8 @@ return rewrite_clj.node.keyword.keyword_node.cljs$core$IFn$_invoke$arity$variadi
 });
 
 (rewrite_clj.node.keyword.keyword_node.cljs$core$IFn$_invoke$arity$variadic = (function (k,p__29405){
-var vec__29406 = p__29405;
-var namespaced_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__29406,(0),null);
+var vec__29409 = p__29405;
+var namespaced_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__29409,(0),null);
 if((k instanceof cljs.core.Keyword)){
 } else {
 throw (new Error("Assert failed: (keyword? k)"));

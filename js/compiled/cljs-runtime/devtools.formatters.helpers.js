@@ -2,8 +2,8 @@ goog.provide('devtools.formatters.helpers');
 devtools.formatters.helpers.pref = (function devtools$formatters$helpers$pref(v){
 while(true){
 if((v instanceof cljs.core.Keyword)){
-var G__23489 = devtools.prefs.pref(v);
-v = G__23489;
+var G__23487 = devtools.prefs.pref(v);
+v = G__23487;
 continue;
 } else {
 return v;
@@ -48,7 +48,7 @@ return false;
 } else {
 return cljs.core.native_satisfies_QMARK_(cljs.core.IPrintWithWriter,value);
 }
-}catch (e23464){var _e__20799__auto__ = e23464;
+}catch (e23464){var _e__20603__auto__ = e23464;
 return false;
 }})();
 if(cljs.core.truth_(or__4126__auto__)){
@@ -67,7 +67,7 @@ return false;
 } else {
 return cljs.core.native_satisfies_QMARK_(devtools.format.IDevtoolsFormat,value);
 }
-}catch (e23468){var _e__20799__auto__ = e23468;
+}catch (e23468){var _e__20603__auto__ = e23468;
 return false;
 }})();
 if(cljs.core.truth_(or__4126__auto____$1)){
@@ -86,7 +86,7 @@ return false;
 } else {
 return cljs.core.native_satisfies_QMARK_(devtools.protocols.IFormat,value);
 }
-}catch (e23470){var _e__20799__auto__ = e23470;
+}catch (e23470){var _e__20603__auto__ = e23470;
 return false;
 }}
 }
@@ -157,8 +157,8 @@ devtools.formatters.helpers.directly_printable_QMARK_ = (function devtools$forma
 return ((typeof value === 'string') || (typeof value === 'number') || (devtools.formatters.helpers.bool_QMARK_(value)));
 });
 devtools.formatters.helpers.abbreviated_QMARK_ = (function devtools$formatters$helpers$abbreviated_QMARK_(template){
-return cljs.core.some((function (p1__23485_SHARP_){
-return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(devtools.formatters.helpers.pref(new cljs.core.Keyword(null,"more-marker","more-marker",-14717935)),p1__23485_SHARP_);
+return cljs.core.some((function (p1__23484_SHARP_){
+return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(devtools.formatters.helpers.pref(new cljs.core.Keyword(null,"more-marker","more-marker",-14717935)),p1__23484_SHARP_);
 }),template);
 });
 devtools.formatters.helpers.abbreviate_long_string = (function devtools$formatters$helpers$abbreviate_long_string(string,marker,prefix_limit,postfix_limit){

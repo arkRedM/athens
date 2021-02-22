@@ -128,8 +128,8 @@ return com.rpl.specter.navs.non_transient_map_all_transform(structure__$1,next_f
 (cljs.core.PersistentHashMap.prototype.com$rpl$specter$navs$AllTransformProtocol$all_transform$arity$2 = (function (structure,next_fn){
 var structure__$1 = this;
 return cljs.core.persistent_BANG_(cljs.core.reduce_kv((function (m,k,v){
-var newkv = (function (){var G__38023 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [k,v], null);
-return (next_fn.cljs$core$IFn$_invoke$arity$1 ? next_fn.cljs$core$IFn$_invoke$arity$1(G__38023) : next_fn.call(null,G__38023));
+var newkv = (function (){var G__38022 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [k,v], null);
+return (next_fn.cljs$core$IFn$_invoke$arity$1 ? next_fn.cljs$core$IFn$_invoke$arity$1(G__38022) : next_fn.call(null,G__38022));
 })();
 if(com.rpl.specter.navs.void_transformed_kv_pair_QMARK_(newkv)){
 return m;
@@ -151,8 +151,8 @@ return com.rpl.specter.navs.all_transform_list(structure,next_fn);
 } else {
 if(cljs.core.map_QMARK_(structure)){
 return cljs.core.reduce_kv((function (m,k,v){
-var newkv = (function (){var G__38024 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [k,v], null);
-return (next_fn.cljs$core$IFn$_invoke$arity$1 ? next_fn.cljs$core$IFn$_invoke$arity$1(G__38024) : next_fn.call(null,G__38024));
+var newkv = (function (){var G__38023 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [k,v], null);
+return (next_fn.cljs$core$IFn$_invoke$arity$1 ? next_fn.cljs$core$IFn$_invoke$arity$1(G__38023) : next_fn.call(null,G__38023));
 })();
 if(com.rpl.specter.navs.void_transformed_kv_pair_QMARK_(newkv)){
 return m;
@@ -684,11 +684,11 @@ return self__.meta38031;
 
 (com.rpl.specter.navs.t_com$rpl$specter$navs38030.prototype.com$rpl$specter$protocols$RichNavigator$ = cljs.core.PROTOCOL_SENTINEL);
 
-(com.rpl.specter.navs.t_com$rpl$specter$navs38030.prototype.com$rpl$specter$protocols$RichNavigator$select_STAR_$arity$4 = (function (this__36275__auto__,vals__36276__auto__,structure,next_fn__36277__auto__){
+(com.rpl.specter.navs.t_com$rpl$specter$navs38030.prototype.com$rpl$specter$protocols$RichNavigator$select_STAR_$arity$4 = (function (this__36268__auto__,vals__36269__auto__,structure,next_fn__36270__auto__){
 var self__ = this;
-var this__36275__auto____$1 = this;
-var next_fn = (function (s__36278__auto__){
-return (next_fn__36277__auto__.cljs$core$IFn$_invoke$arity$2 ? next_fn__36277__auto__.cljs$core$IFn$_invoke$arity$2(vals__36276__auto__,s__36278__auto__) : next_fn__36277__auto__.call(null,vals__36276__auto__,s__36278__auto__));
+var this__36268__auto____$1 = this;
+var next_fn = (function (s__36271__auto__){
+return (next_fn__36270__auto__.cljs$core$IFn$_invoke$arity$2 ? next_fn__36270__auto__.cljs$core$IFn$_invoke$arity$2(vals__36269__auto__,s__36271__auto__) : next_fn__36270__auto__.call(null,vals__36269__auto__,s__36271__auto__));
 });
 if(cljs.core.not(com.rpl.specter.navs.fast_empty_QMARK_(structure))){
 return next_fn((self__.getter.cljs$core$IFn$_invoke$arity$1 ? self__.getter.cljs$core$IFn$_invoke$arity$1(structure) : self__.getter.call(null,structure)));
@@ -697,11 +697,11 @@ return com.rpl.specter.impl.NONE;
 }
 }));
 
-(com.rpl.specter.navs.t_com$rpl$specter$navs38030.prototype.com$rpl$specter$protocols$RichNavigator$transform_STAR_$arity$4 = (function (this__36275__auto__,vals__36276__auto__,structure,next_fn__36277__auto__){
+(com.rpl.specter.navs.t_com$rpl$specter$navs38030.prototype.com$rpl$specter$protocols$RichNavigator$transform_STAR_$arity$4 = (function (this__36268__auto__,vals__36269__auto__,structure,next_fn__36270__auto__){
 var self__ = this;
-var this__36275__auto____$1 = this;
-var next_fn = (function (s__36278__auto__){
-return (next_fn__36277__auto__.cljs$core$IFn$_invoke$arity$2 ? next_fn__36277__auto__.cljs$core$IFn$_invoke$arity$2(vals__36276__auto__,s__36278__auto__) : next_fn__36277__auto__.call(null,vals__36276__auto__,s__36278__auto__));
+var this__36268__auto____$1 = this;
+var next_fn = (function (s__36271__auto__){
+return (next_fn__36270__auto__.cljs$core$IFn$_invoke$arity$2 ? next_fn__36270__auto__.cljs$core$IFn$_invoke$arity$2(vals__36269__auto__,s__36271__auto__) : next_fn__36270__auto__.call(null,vals__36269__auto__,s__36271__auto__));
 });
 if(cljs.core.truth_(com.rpl.specter.navs.fast_empty_QMARK_(structure))){
 return structure;
@@ -994,9 +994,9 @@ return self__.meta38050;
 (com.rpl.specter.navs.t_com$rpl$specter$navs38049.prototype.com$rpl$specter$protocols$RichNavigator$select_STAR_$arity$4 = (function (this$,vals,structure,next_fn){
 var self__ = this;
 var this$__$1 = this;
-var G__38053 = vals;
-var G__38054 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(structure,self__.key);
-return (next_fn.cljs$core$IFn$_invoke$arity$2 ? next_fn.cljs$core$IFn$_invoke$arity$2(G__38053,G__38054) : next_fn.call(null,G__38053,G__38054));
+var G__38052 = vals;
+var G__38053 = cljs.core.get.cljs$core$IFn$_invoke$arity$2(structure,self__.key);
+return (next_fn.cljs$core$IFn$_invoke$arity$2 ? next_fn.cljs$core$IFn$_invoke$arity$2(G__38052,G__38053) : next_fn.call(null,G__38052,G__38053));
 }));
 
 (com.rpl.specter.navs.t_com$rpl$specter$navs38049.prototype.com$rpl$specter$protocols$RichNavigator$transform_STAR_$arity$4 = (function (this$,vals,structure,next_fn){

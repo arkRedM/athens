@@ -3,13 +3,13 @@ goog.provide('dommy.utils');
  * Dissociate this keyseq from m, removing any empty maps created as a result
  * (including at the top-level).
  */
-dommy.utils.dissoc_in = (function dommy$utils$dissoc_in(m,p__60143){
-var vec__60145 = p__60143;
-var seq__60146 = cljs.core.seq(vec__60145);
-var first__60147 = cljs.core.first(seq__60146);
-var seq__60146__$1 = cljs.core.next(seq__60146);
-var k = first__60147;
-var ks = seq__60146__$1;
+dommy.utils.dissoc_in = (function dommy$utils$dissoc_in(m,p__60142){
+var vec__60143 = p__60142;
+var seq__60144 = cljs.core.seq(vec__60143);
+var first__60145 = cljs.core.first(seq__60144);
+var seq__60144__$1 = cljs.core.next(seq__60144);
+var k = first__60145;
+var ks = seq__60144__$1;
 if(cljs.core.truth_(m)){
 var temp__5733__auto__ = (function (){var and__4115__auto__ = ks;
 if(and__4115__auto__){
@@ -84,8 +84,8 @@ if((i >= (0))){
 if(dommy.utils.class_match_QMARK_(class_name,class$,i)){
 return i;
 } else {
-var G__60163 = (i + class$.length);
-start_from = G__60163;
+var G__60160 = (i + class$.length);
+start_from = G__60160;
 continue;
 }
 } else {
@@ -101,10 +101,10 @@ var class_len = class_name.length;
 var temp__5733__auto__ = dommy.utils.class_index(class_name,class$);
 if(cljs.core.truth_(temp__5733__auto__)){
 var i = temp__5733__auto__;
-var G__60164 = (function (){var end = (i + class$.length);
+var G__60161 = (function (){var end = (i + class$.length);
 return cljs.core.str.cljs$core$IFn$_invoke$arity$1((((end < class_len))?[cljs.core.str.cljs$core$IFn$_invoke$arity$1(class_name.substring((0),i)),cljs.core.str.cljs$core$IFn$_invoke$arity$1(class_name.substr((end + (1))))].join(''):class_name.substring((0),(i - (1)))));
 })();
-class_name = G__60164;
+class_name = G__60161;
 continue;
 } else {
 return class_name;

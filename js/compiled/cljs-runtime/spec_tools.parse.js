@@ -35,14 +35,14 @@ var G__55513 = x;
 return (spec_tools.parse.parse_form.cljs$core$IFn$_invoke$arity$2 ? spec_tools.parse.parse_form.cljs$core$IFn$_invoke$arity$2(G__55512,G__55513) : spec_tools.parse.parse_form.call(null,G__55512,G__55513));
 } else {
 if(cljs.core.truth_(cljs.spec.alpha.spec_QMARK_(x))){
-var G__55538 = cljs.spec.alpha.form(x);
-x = G__55538;
+var G__55540 = cljs.spec.alpha.form(x);
+x = G__55540;
 continue;
 } else {
 if(cljs.core.ifn_QMARK_(x)){
-var G__55514 = spec_tools.form.resolve_form.cljs$core$IFn$_invoke$arity$1(x);
-var G__55515 = null;
-return (spec_tools.parse.parse_form.cljs$core$IFn$_invoke$arity$2 ? spec_tools.parse.parse_form.cljs$core$IFn$_invoke$arity$2(G__55514,G__55515) : spec_tools.parse.parse_form.call(null,G__55514,G__55515));
+var G__55515 = spec_tools.form.resolve_form.cljs$core$IFn$_invoke$arity$1(x);
+var G__55516 = null;
+return (spec_tools.parse.parse_form.cljs$core$IFn$_invoke$arity$2 ? spec_tools.parse.parse_form.cljs$core$IFn$_invoke$arity$2(G__55515,G__55516) : spec_tools.parse.parse_form.call(null,G__55515,G__55516));
 } else {
 return (spec_tools.parse.parse_form.cljs$core$IFn$_invoke$arity$2 ? spec_tools.parse.parse_form.cljs$core$IFn$_invoke$arity$2(x,null) : spec_tools.parse.parse_form.call(null,x,null));
 
@@ -63,15 +63,15 @@ var or__4126__auto__ = new cljs.core.Keyword("spec-tools.parse","keys","spec-too
 if(cljs.core.truth_(or__4126__auto__)){
 return or__4126__auto__;
 } else {
-var G__55516 = parse_data;
-var G__55516__$1 = (((G__55516 == null))?null:new cljs.core.Keyword("spec-tools.parse","items","spec-tools.parse/items",1255627600).cljs$core$IFn$_invoke$arity$1(G__55516));
-var G__55516__$2 = (((G__55516__$1 == null))?null:cljs.core.keep.cljs$core$IFn$_invoke$arity$2(spec_tools.parse.get_keys,G__55516__$1));
-var G__55516__$3 = (((G__55516__$2 == null))?null:cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.concat,G__55516__$2));
-var G__55516__$4 = (((G__55516__$3 == null))?null:cljs.core.seq(G__55516__$3));
-if((G__55516__$4 == null)){
+var G__55520 = parse_data;
+var G__55520__$1 = (((G__55520 == null))?null:new cljs.core.Keyword("spec-tools.parse","items","spec-tools.parse/items",1255627600).cljs$core$IFn$_invoke$arity$1(G__55520));
+var G__55520__$2 = (((G__55520__$1 == null))?null:cljs.core.keep.cljs$core$IFn$_invoke$arity$2(spec_tools.parse.get_keys,G__55520__$1));
+var G__55520__$3 = (((G__55520__$2 == null))?null:cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.concat,G__55520__$2));
+var G__55520__$4 = (((G__55520__$3 == null))?null:cljs.core.seq(G__55520__$3));
+if((G__55520__$4 == null)){
 return null;
 } else {
-return cljs.core.set(G__55516__$4);
+return cljs.core.set(G__55520__$4);
 }
 }
 });
@@ -81,8 +81,8 @@ spec_tools.parse.parse_form = (function (){var method_table__4619__auto__ = cljs
 var prefer_table__4620__auto__ = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentArrayMap.EMPTY);
 var method_cache__4621__auto__ = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentArrayMap.EMPTY);
 var cached_hierarchy__4622__auto__ = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentArrayMap.EMPTY);
-var hierarchy__4623__auto__ = cljs.core.get.cljs$core$IFn$_invoke$arity$3(new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"default","default",-1987822328),new cljs.core.Keyword("spec-tools.parse","default","spec-tools.parse/default",-1184283850)], null),new cljs.core.Keyword(null,"hierarchy","hierarchy",-1053470341),(function (){var fexpr__55517 = cljs.core.get_global_hierarchy;
-return (fexpr__55517.cljs$core$IFn$_invoke$arity$0 ? fexpr__55517.cljs$core$IFn$_invoke$arity$0() : fexpr__55517.call(null));
+var hierarchy__4623__auto__ = cljs.core.get.cljs$core$IFn$_invoke$arity$3(new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"default","default",-1987822328),new cljs.core.Keyword("spec-tools.parse","default","spec-tools.parse/default",-1184283850)], null),new cljs.core.Keyword(null,"hierarchy","hierarchy",-1053470341),(function (){var fexpr__55521 = cljs.core.get_global_hierarchy;
+return (fexpr__55521.cljs$core$IFn$_invoke$arity$0 ? fexpr__55521.cljs$core$IFn$_invoke$arity$0() : fexpr__55521.call(null));
 })());
 return (new cljs.core.MultiFn(cljs.core.symbol.cljs$core$IFn$_invoke$arity$2("spec-tools.parse","parse-form"),(function (dispatch,_){
 return dispatch;
