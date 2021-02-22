@@ -98,8 +98,8 @@ return athens.router.navigate(new cljs.core.Keyword(null,"home","home",-74557309
  * Don't navigate if already on the page.
  */
 athens.router.navigate_uid = (function athens$router$navigate_uid(var_args){
-var G__58487 = arguments.length;
-switch (G__58487) {
+var G__58483 = arguments.length;
+switch (G__58483) {
 case 1:
 return athens.router.navigate_uid.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -115,24 +115,30 @@ throw (new Error(["Invalid arity: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(
 });
 
 (athens.router.navigate_uid.cljs$core$IFn$_invoke$arity$1 = (function (uid){
+var vec__58484 = athens.db.uid_and_embed_id(uid);
+var uid__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__58484,(0),null);
+var _embed_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__58484,(1),null);
 var current_route_uid = cljs.core.deref(re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("current-route","uid","current-route/uid",-327873095)], null)));
-if(cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(current_route_uid,uid)){
-return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"navigate","navigate",657596805),new cljs.core.Keyword(null,"page","page",849072397),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"id","id",-1388402092),uid], null)], null));
+if(cljs.core.not_EQ_.cljs$core$IFn$_invoke$arity$2(current_route_uid,uid__$1)){
+return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"navigate","navigate",657596805),new cljs.core.Keyword(null,"page","page",849072397),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"id","id",-1388402092),uid__$1], null)], null));
 } else {
 return null;
 }
 }));
 
 (athens.router.navigate_uid.cljs$core$IFn$_invoke$arity$2 = (function (uid,e){
+var vec__58487 = athens.db.uid_and_embed_id(uid);
+var uid__$1 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__58487,(0),null);
+var _embed_id = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__58487,(1),null);
 var shift = e.shiftKey;
 if(cljs.core.truth_(shift)){
 window.getSelection().empty();
 
 e.preventDefault();
 
-return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("right-sidebar","open-item","right-sidebar/open-item",-1234515614),uid], null));
+return re_frame.core.dispatch(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("right-sidebar","open-item","right-sidebar/open-item",-1234515614),uid__$1], null));
 } else {
-return athens.router.navigate_uid.cljs$core$IFn$_invoke$arity$1(uid);
+return athens.router.navigate_uid.cljs$core$IFn$_invoke$arity$1(uid__$1);
 }
 }));
 
