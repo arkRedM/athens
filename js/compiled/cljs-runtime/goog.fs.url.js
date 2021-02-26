@@ -7,7 +7,7 @@ goog.fs.url.revokeObjectUrl = function(url) {
 };
 goog.fs.url.UrlObject_;
 goog.fs.url.getUrlObject_ = function() {
-  var urlObject = goog.fs.url.findUrlObject_();
+  const urlObject = goog.fs.url.findUrlObject_();
   if (urlObject != null) {
     return urlObject;
   } else {

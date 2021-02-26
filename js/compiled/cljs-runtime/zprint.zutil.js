@@ -326,10 +326,10 @@ while(true){
 if(cljs.core.not(nloc)){
 return ploc;
 } else {
-var G__30110 = zprint.zutil.zleftnws(nloc);
-var G__30111 = nloc;
-nloc = G__30110;
-ploc = G__30111;
+var G__30111 = zprint.zutil.zleftnws(nloc);
+var G__30112 = nloc;
+nloc = G__30111;
+ploc = G__30112;
 continue;
 }
 break;
@@ -357,10 +357,10 @@ while(true){
 if((((nloc == null)) || (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(i,(0))))){
 return nloc;
 } else {
-var G__30113 = zprint.zutil.zrightnws(nloc);
-var G__30114 = (i - (1));
-nloc = G__30113;
-i = G__30114;
+var G__30115 = zprint.zutil.zrightnws(nloc);
+var G__30116 = (i - (1));
+nloc = G__30115;
+i = G__30116;
 continue;
 }
 break;
@@ -401,8 +401,8 @@ while(true){
 if(cljs.core.not(nloc)){
 return out;
 } else {
-var G__30119 = (zprint.zutil.right_STAR_.cljs$core$IFn$_invoke$arity$1 ? zprint.zutil.right_STAR_.cljs$core$IFn$_invoke$arity$1(nloc) : zprint.zutil.right_STAR_.call(null,nloc));
-var G__30120 = (function (){var temp__5733__auto__ = (((!(((zprint.zutil.whitespace_QMARK_(nloc)) && ((!(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((rewrite_clj.zip.tag.cljs$core$IFn$_invoke$arity$1 ? rewrite_clj.zip.tag.cljs$core$IFn$_invoke$arity$1(nloc) : rewrite_clj.zip.tag.call(null,nloc)),new cljs.core.Keyword(null,"newline","newline",1790071323)))))))))?(zfn.cljs$core$IFn$_invoke$arity$1 ? zfn.cljs$core$IFn$_invoke$arity$1(nloc) : zfn.call(null,nloc)):null);
+var G__30120 = (zprint.zutil.right_STAR_.cljs$core$IFn$_invoke$arity$1 ? zprint.zutil.right_STAR_.cljs$core$IFn$_invoke$arity$1(nloc) : zprint.zutil.right_STAR_.call(null,nloc));
+var G__30121 = (function (){var temp__5733__auto__ = (((!(((zprint.zutil.whitespace_QMARK_(nloc)) && ((!(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((rewrite_clj.zip.tag.cljs$core$IFn$_invoke$arity$1 ? rewrite_clj.zip.tag.cljs$core$IFn$_invoke$arity$1(nloc) : rewrite_clj.zip.tag.call(null,nloc)),new cljs.core.Keyword(null,"newline","newline",1790071323)))))))))?(zfn.cljs$core$IFn$_invoke$arity$1 ? zfn.cljs$core$IFn$_invoke$arity$1(nloc) : zfn.call(null,nloc)):null);
 if(cljs.core.truth_(temp__5733__auto__)){
 var result = temp__5733__auto__;
 return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,result);
@@ -410,8 +410,8 @@ return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,result);
 return out;
 }
 })();
-nloc = G__30119;
-out = G__30120;
+nloc = G__30120;
+out = G__30121;
 continue;
 }
 break;
@@ -428,8 +428,8 @@ while(true){
 if(cljs.core.not(nloc)){
 return out;
 } else {
-var G__30121 = (zprint.zutil.right_STAR_.cljs$core$IFn$_invoke$arity$1 ? zprint.zutil.right_STAR_.cljs$core$IFn$_invoke$arity$1(nloc) : zprint.zutil.right_STAR_.call(null,nloc));
-var G__30122 = (function (){var temp__5733__auto__ = (((!(((zprint.zutil.whitespace_QMARK_(nloc)) && ((!(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((rewrite_clj.zip.tag.cljs$core$IFn$_invoke$arity$1 ? rewrite_clj.zip.tag.cljs$core$IFn$_invoke$arity$1(nloc) : rewrite_clj.zip.tag.call(null,nloc)),new cljs.core.Keyword(null,"newline","newline",1790071323))))) && ((!(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((rewrite_clj.zip.tag.cljs$core$IFn$_invoke$arity$1 ? rewrite_clj.zip.tag.cljs$core$IFn$_invoke$arity$1(nloc) : rewrite_clj.zip.tag.call(null,nloc)),new cljs.core.Keyword(null,"comma","comma",1699024745)))))))))?(zfn.cljs$core$IFn$_invoke$arity$1 ? zfn.cljs$core$IFn$_invoke$arity$1(nloc) : zfn.call(null,nloc)):null);
+var G__30124 = (zprint.zutil.right_STAR_.cljs$core$IFn$_invoke$arity$1 ? zprint.zutil.right_STAR_.cljs$core$IFn$_invoke$arity$1(nloc) : zprint.zutil.right_STAR_.call(null,nloc));
+var G__30125 = (function (){var temp__5733__auto__ = (((!(((zprint.zutil.whitespace_QMARK_(nloc)) && ((!(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((rewrite_clj.zip.tag.cljs$core$IFn$_invoke$arity$1 ? rewrite_clj.zip.tag.cljs$core$IFn$_invoke$arity$1(nloc) : rewrite_clj.zip.tag.call(null,nloc)),new cljs.core.Keyword(null,"newline","newline",1790071323))))) && ((!(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2((rewrite_clj.zip.tag.cljs$core$IFn$_invoke$arity$1 ? rewrite_clj.zip.tag.cljs$core$IFn$_invoke$arity$1(nloc) : rewrite_clj.zip.tag.call(null,nloc)),new cljs.core.Keyword(null,"comma","comma",1699024745)))))))))?(zfn.cljs$core$IFn$_invoke$arity$1 ? zfn.cljs$core$IFn$_invoke$arity$1(nloc) : zfn.call(null,nloc)):null);
 if(cljs.core.truth_(temp__5733__auto__)){
 var result = temp__5733__auto__;
 return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,result);
@@ -437,8 +437,8 @@ return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,result);
 return out;
 }
 })();
-nloc = G__30121;
-out = G__30122;
+nloc = G__30124;
+out = G__30125;
 continue;
 }
 break;
@@ -455,8 +455,8 @@ while(true){
 if(cljs.core.not(nloc)){
 return out;
 } else {
-var G__30126 = (zprint.zutil.right_STAR_.cljs$core$IFn$_invoke$arity$1 ? zprint.zutil.right_STAR_.cljs$core$IFn$_invoke$arity$1(nloc) : zprint.zutil.right_STAR_.call(null,nloc));
-var G__30127 = (function (){var temp__5733__auto__ = (((!(zprint.zutil.whitespace_QMARK_(nloc))))?(zfn.cljs$core$IFn$_invoke$arity$1 ? zfn.cljs$core$IFn$_invoke$arity$1(nloc) : zfn.call(null,nloc)):null);
+var G__30129 = (zprint.zutil.right_STAR_.cljs$core$IFn$_invoke$arity$1 ? zprint.zutil.right_STAR_.cljs$core$IFn$_invoke$arity$1(nloc) : zprint.zutil.right_STAR_.call(null,nloc));
+var G__30130 = (function (){var temp__5733__auto__ = (((!(zprint.zutil.whitespace_QMARK_(nloc))))?(zfn.cljs$core$IFn$_invoke$arity$1 ? zfn.cljs$core$IFn$_invoke$arity$1(nloc) : zfn.call(null,nloc)):null);
 if(cljs.core.truth_(temp__5733__auto__)){
 var result = temp__5733__auto__;
 return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,result);
@@ -464,8 +464,8 @@ return cljs.core.conj.cljs$core$IFn$_invoke$arity$2(out,result);
 return out;
 }
 })();
-nloc = G__30126;
-out = G__30127;
+nloc = G__30129;
+out = G__30130;
 continue;
 }
 break;

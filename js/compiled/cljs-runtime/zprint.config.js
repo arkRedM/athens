@@ -392,9 +392,9 @@ return errors;
 } else {
 zprint.config.reset_options_BANG_.cljs$core$IFn$_invoke$arity$2(zprint_options,doc_map);
 
-var G__30196_30338 = new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"configured?","configured?",642178633),true], null);
-var G__30197_30339 = "internal";
-(zprint.config.config_set_options_BANG_.cljs$core$IFn$_invoke$arity$2 ? zprint.config.config_set_options_BANG_.cljs$core$IFn$_invoke$arity$2(G__30196_30338,G__30197_30339) : zprint.config.config_set_options_BANG_.call(null,G__30196_30338,G__30197_30339));
+var G__30196_30339 = new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"configured?","configured?",642178633),true], null);
+var G__30197_30340 = "internal";
+(zprint.config.config_set_options_BANG_.cljs$core$IFn$_invoke$arity$2 ? zprint.config.config_set_options_BANG_.cljs$core$IFn$_invoke$arity$2(G__30196_30339,G__30197_30340) : zprint.config.config_set_options_BANG_.call(null,G__30196_30339,G__30197_30340));
 
 if(cljs.core.truth_(zprint.config.is_in_repl_QMARK_())){
 zprint.config.internal_set_options_BANG_("REPL execution default",zprint.config.get_explained_all_options(),zprint.config.get_options(),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"parallel?","parallel?",-25273892),true], null));

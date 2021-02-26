@@ -131,7 +131,7 @@ goog.debug.normalizeErrorObject = function(err) {
   }
   try {
     fileName = err.fileName || err.filename || err.sourceURL || goog.global["$googDebugFname"] || href;
-  } catch (e$3) {
+  } catch (e) {
     fileName = "Not available";
     threwError = true;
   }

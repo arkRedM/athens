@@ -24,7 +24,7 @@ goog.storage.Storage.prototype.get = function(key) {
   }
   try {
     return JSON.parse(json);
-  } catch (e$5) {
+  } catch (e) {
     throw goog.storage.ErrorCode.INVALID_VALUE;
   }
 };

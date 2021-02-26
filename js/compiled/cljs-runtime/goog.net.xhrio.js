@@ -176,9 +176,9 @@ goog.scope(function() {
       this.inSend_ = true;
       this.xhr_.send(content);
       this.inSend_ = false;
-    } catch (err$6) {
-      goog.log.fine(this.logger_, this.formatMsg_("Send error: " + err$6.message));
-      this.error_(goog.net.ErrorCode.EXCEPTION, err$6);
+    } catch (err) {
+      goog.log.fine(this.logger_, this.formatMsg_("Send error: " + err.message));
+      this.error_(goog.net.ErrorCode.EXCEPTION, err);
     }
   };
   goog.net.XhrIo.shouldUseXhr2Timeout_ = function(xhr) {

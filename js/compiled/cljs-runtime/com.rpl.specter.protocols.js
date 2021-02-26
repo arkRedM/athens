@@ -102,7 +102,7 @@ return com$rpl$specter$protocols$Collector$collect_val$dyn_34090(this$,structure
  */
 com.rpl.specter.protocols.ImplicitNav = function(){};
 
-var com$rpl$specter$protocols$ImplicitNav$implicit_nav$dyn_34091 = (function (obj){
+var com$rpl$specter$protocols$ImplicitNav$implicit_nav$dyn_34094 = (function (obj){
 var x__4428__auto__ = (((obj == null))?null:obj);
 var m__4429__auto__ = (com.rpl.specter.protocols.implicit_nav[goog.typeOf(x__4428__auto__)]);
 if((!((m__4429__auto__ == null)))){
@@ -120,7 +120,7 @@ com.rpl.specter.protocols.implicit_nav = (function com$rpl$specter$protocols$imp
 if((((!((obj == null)))) && ((!((obj.com$rpl$specter$protocols$ImplicitNav$implicit_nav$arity$1 == null)))))){
 return obj.com$rpl$specter$protocols$ImplicitNav$implicit_nav$arity$1(obj);
 } else {
-return com$rpl$specter$protocols$ImplicitNav$implicit_nav$dyn_34091(obj);
+return com$rpl$specter$protocols$ImplicitNav$implicit_nav$dyn_34094(obj);
 }
 });
 
