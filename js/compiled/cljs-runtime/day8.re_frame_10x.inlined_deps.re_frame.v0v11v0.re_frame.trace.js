@@ -68,13 +68,13 @@ var count__27442_27469 = (0);
 var i__27443_27470 = (0);
 while(true){
 if((i__27443_27470 < count__27442_27469)){
-var vec__27454_27471 = chunk__27441_27468.cljs$core$IIndexed$_nth$arity$2(null,i__27443_27470);
-var k_27472 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27454_27471,(0),null);
-var cb_27473 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27454_27471,(1),null);
-try{var G__27458_27474 = cljs.core.deref(day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.trace.traces);
-(cb_27473.cljs$core$IFn$_invoke$arity$1 ? cb_27473.cljs$core$IFn$_invoke$arity$1(G__27458_27474) : cb_27473.call(null,G__27458_27474));
-}catch (e27457){var e_27475 = e27457;
-day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.loggers.console.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"error","error",-978969032),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["Error thrown from trace cb",k_27472,"while storing",cljs.core.deref(day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.trace.traces),e_27475], 0));
+var vec__27454_27472 = chunk__27441_27468.cljs$core$IIndexed$_nth$arity$2(null,i__27443_27470);
+var k_27473 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27454_27472,(0),null);
+var cb_27474 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__27454_27472,(1),null);
+try{var G__27458_27475 = cljs.core.deref(day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.trace.traces);
+(cb_27474.cljs$core$IFn$_invoke$arity$1 ? cb_27474.cljs$core$IFn$_invoke$arity$1(G__27458_27475) : cb_27474.call(null,G__27458_27475));
+}catch (e27457){var e_27476 = e27457;
+day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.loggers.console.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword(null,"error","error",-978969032),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["Error thrown from trace cb",k_27473,"while storing",cljs.core.deref(day8.re_frame_10x.inlined_deps.re_frame.v0v11v0.re_frame.trace.traces),e_27476], 0));
 }
 
 var G__27477 = seq__27440_27467;
@@ -91,15 +91,15 @@ var temp__5735__auto___27481 = cljs.core.seq(seq__27440_27467);
 if(temp__5735__auto___27481){
 var seq__27440_27482__$1 = temp__5735__auto___27481;
 if(cljs.core.chunked_seq_QMARK_(seq__27440_27482__$1)){
-var c__4556__auto___27486 = cljs.core.chunk_first(seq__27440_27482__$1);
-var G__27487 = cljs.core.chunk_rest(seq__27440_27482__$1);
-var G__27488 = c__4556__auto___27486;
-var G__27489 = cljs.core.count(c__4556__auto___27486);
-var G__27490 = (0);
-seq__27440_27467 = G__27487;
-chunk__27441_27468 = G__27488;
-count__27442_27469 = G__27489;
-i__27443_27470 = G__27490;
+var c__4556__auto___27485 = cljs.core.chunk_first(seq__27440_27482__$1);
+var G__27486 = cljs.core.chunk_rest(seq__27440_27482__$1);
+var G__27487 = c__4556__auto___27485;
+var G__27488 = cljs.core.count(c__4556__auto___27485);
+var G__27489 = (0);
+seq__27440_27467 = G__27486;
+chunk__27441_27468 = G__27487;
+count__27442_27469 = G__27488;
+i__27443_27470 = G__27489;
 continue;
 } else {
 var vec__27459_27491 = cljs.core.first(seq__27440_27482__$1);

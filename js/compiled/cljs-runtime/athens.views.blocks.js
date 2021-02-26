@@ -291,8 +291,8 @@ return athens.views.blocks.slash_item_click(state__$1,block,item);
 });})(i__65792,vec__65794,i,vec__65797,text,icon,_expansion,kbd,_pos,item,c__4527__auto__,size__4528__auto__,b__65793,s__65791__$2,temp__5735__auto__,map__65786,map__65786__$1,caret_position,index,results,type,map__65787,map__65787__$1,left,top,ref,handle_click_outside))
 ], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"<>","<>",1280186386),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [reagent.core.adapt_react_class(icon)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),text], null),(cljs.core.truth_(kbd)?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"kbd","kbd",316156875),kbd], null):null)], null)], null));
 
-var G__65866 = (i__65792 + (1));
-i__65792 = G__65866;
+var G__65864 = (i__65792 + (1));
+i__65792 = G__65864;
 continue;
 } else {
 return true;
@@ -476,10 +476,10 @@ return cljs.core.PersistentVector.EMPTY;
 if(((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.first(new_items),start_uid)) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.last(new_items),end_uid)))) || (((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.last(new_items),start_uid)) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.first(new_items),end_uid)))))){
 return new_items;
 } else {
-var G__65869 = (select_fn.cljs$core$IFn$_invoke$arity$1 ? select_fn.cljs$core$IFn$_invoke$arity$1(new_items) : select_fn.call(null,new_items));
-var G__65870 = new_items;
-new_items = G__65869;
-prev_items = G__65870;
+var G__65865 = (select_fn.cljs$core$IFn$_invoke$arity$1 ? select_fn.cljs$core$IFn$_invoke$arity$1(new_items) : select_fn.call(null,new_items));
+var G__65866 = new_items;
+new_items = G__65865;
+prev_items = G__65866;
 continue;
 
 }
@@ -933,17 +933,17 @@ var string = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__65847__$1,new cljs
 var open = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__65847__$1,new cljs.core.Keyword("block","open","block/open",-1875254829));
 var children = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__65847__$1,new cljs.core.Keyword("block","children","block/children",-1040716209));
 var _refs = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__65847__$1,new cljs.core.Keyword("block","_refs","block/_refs",830218531));
-var uid_sanitized_block = com.rpl.specter.impl.compiled_transform_STAR_((function (){var info__37103__auto__ = athens.views.blocks.pathcache65850;
-var info__37103__auto____$1 = (((info__37103__auto__ == null))?(function (){var info65851 = com.rpl.specter.impl.magic_precompilation(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [com.rpl.specter.impl.__GT_FnInvocation(com.rpl.specter.impl.__GT_VarUse(athens.util.specter_recursive_path,new cljs.core.Var(function(){return athens.util.specter_recursive_path;},new cljs.core.Symbol("athens.util","specter-recursive-path","athens.util/specter-recursive-path",1130829370,null),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"ns","ns",441598760),new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"file","file",-1269645878),new cljs.core.Keyword(null,"end-column","end-column",1425389514),new cljs.core.Keyword(null,"column","column",2078222095),new cljs.core.Keyword(null,"line","line",212345235),new cljs.core.Keyword(null,"end-line","end-line",1837326455),new cljs.core.Keyword(null,"arglists","arglists",1661989754),new cljs.core.Keyword(null,"doc","doc",1913296891),new cljs.core.Keyword(null,"test","test",577538877)],[new cljs.core.Symbol(null,"athens.util","athens.util",-1545422462,null),new cljs.core.Symbol(null,"specter-recursive-path","specter-recursive-path",1981312529,null),"athens/util.cljs",29,1,225,225,cljs.core.list(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"afn","afn",216963467,null)], null)),"Navigates across maps and lists to find the sub that\n   satisfies the function",(cljs.core.truth_(athens.util.specter_recursive_path)?athens.util.specter_recursive_path.cljs$lang$test:null)])),new cljs.core.Symbol(null,"specter-recursive-path","specter-recursive-path",1981312529,null)),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [com.rpl.specter.impl.__GT_SpecialFormUse((function (p1__65842_SHARP_){
+var uid_sanitized_block = com.rpl.specter.impl.compiled_transform_STAR_((function (){var info__37100__auto__ = athens.views.blocks.pathcache65850;
+var info__37100__auto____$1 = (((info__37100__auto__ == null))?(function (){var info65851 = com.rpl.specter.impl.magic_precompilation(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [com.rpl.specter.impl.__GT_FnInvocation(com.rpl.specter.impl.__GT_VarUse(athens.util.specter_recursive_path,new cljs.core.Var(function(){return athens.util.specter_recursive_path;},new cljs.core.Symbol("athens.util","specter-recursive-path","athens.util/specter-recursive-path",1130829370,null),cljs.core.PersistentHashMap.fromArrays([new cljs.core.Keyword(null,"ns","ns",441598760),new cljs.core.Keyword(null,"name","name",1843675177),new cljs.core.Keyword(null,"file","file",-1269645878),new cljs.core.Keyword(null,"end-column","end-column",1425389514),new cljs.core.Keyword(null,"column","column",2078222095),new cljs.core.Keyword(null,"line","line",212345235),new cljs.core.Keyword(null,"end-line","end-line",1837326455),new cljs.core.Keyword(null,"arglists","arglists",1661989754),new cljs.core.Keyword(null,"doc","doc",1913296891),new cljs.core.Keyword(null,"test","test",577538877)],[new cljs.core.Symbol(null,"athens.util","athens.util",-1545422462,null),new cljs.core.Symbol(null,"specter-recursive-path","specter-recursive-path",1981312529,null),"athens/util.cljs",29,1,225,225,cljs.core.list(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"afn","afn",216963467,null)], null)),"Navigates across maps and lists to find the sub that\n   satisfies the function",(cljs.core.truth_(athens.util.specter_recursive_path)?athens.util.specter_recursive_path.cljs$lang$test:null)])),new cljs.core.Symbol(null,"specter-recursive-path","specter-recursive-path",1981312529,null)),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [com.rpl.specter.impl.__GT_SpecialFormUse((function (p1__65842_SHARP_){
 return cljs.core.contains_QMARK_(p1__65842_SHARP_,new cljs.core.Keyword("block","uid","block/uid",-1623585167));
 }),cljs.core.list(new cljs.core.Symbol(null,"fn*","fn*",-752876845,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"p1__65842#","p1__65842#",-1290343755,null)], null),cljs.core.list(new cljs.core.Symbol(null,"contains?","contains?",-1676812576,null),new cljs.core.Symbol(null,"p1__65842#","p1__65842#",-1290343755,null),new cljs.core.Keyword("block","uid","block/uid",-1623585167))))], null),cljs.core.list(new cljs.core.Symbol(null,"specter-recursive-path","specter-recursive-path",1981312529,null),cljs.core.list(new cljs.core.Symbol(null,"fn*","fn*",-752876845,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"p1__65842#","p1__65842#",-1290343755,null)], null),cljs.core.list(new cljs.core.Symbol(null,"contains?","contains?",-1676812576,null),new cljs.core.Symbol(null,"p1__65842#","p1__65842#",-1290343755,null),new cljs.core.Keyword("block","uid","block/uid",-1623585167)))))], null),"athens.views.blocks",cljs.core.PersistentVector.EMPTY,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"specter-recursive-path","specter-recursive-path",1981312529,null),cljs.core.list(new cljs.core.Symbol(null,"fn*","fn*",-752876845,null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"p1__65842#","p1__65842#",-1290343755,null)], null),cljs.core.list(new cljs.core.Symbol(null,"contains?","contains?",-1676812576,null),new cljs.core.Symbol(null,"p1__65842#","p1__65842#",-1290343755,null),new cljs.core.Keyword("block","uid","block/uid",-1623585167)))], null));
 athens.views.blocks.pathcache65850 = info65851;
 
 return info65851;
-})():info__37103__auto__);
-var precompiled65852 = com.rpl.specter.impl.cached_path_info_precompiled(info__37103__auto____$1);
-var dynamic_QMARK___37104__auto__ = com.rpl.specter.impl.cached_path_info_dynamic_QMARK_(info__37103__auto____$1);
-if(cljs.core.truth_(dynamic_QMARK___37104__auto__)){
+})():info__37100__auto__);
+var precompiled65852 = com.rpl.specter.impl.cached_path_info_precompiled(info__37100__auto____$1);
+var dynamic_QMARK___37101__auto__ = com.rpl.specter.impl.cached_path_info_dynamic_QMARK_(info__37100__auto____$1);
+if(cljs.core.truth_(dynamic_QMARK___37101__auto__)){
 var G__65853 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [athens.util.specter_recursive_path,(function (p1__65842_SHARP_){
 return cljs.core.contains_QMARK_(p1__65842_SHARP_,new cljs.core.Keyword("block","uid","block/uid",-1623585167));
 })], null);

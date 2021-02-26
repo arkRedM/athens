@@ -1,10 +1,10 @@
 goog.provide('posh.lib.update');
-posh.lib.update.update_pull = (function posh$lib$update$update_pull(p__40383,storage_key){
-var map__40384 = p__40383;
-var map__40384__$1 = (((((!((map__40384 == null))))?(((((map__40384.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__40384.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__40384):map__40384);
-var posh_tree = map__40384__$1;
-var dcfg = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40384__$1,new cljs.core.Keyword(null,"dcfg","dcfg",-880371016));
-var retrieve = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40384__$1,new cljs.core.Keyword(null,"retrieve","retrieve",-657129560));
+posh.lib.update.update_pull = (function posh$lib$update$update_pull(p__40385,storage_key){
+var map__40386 = p__40385;
+var map__40386__$1 = (((((!((map__40386 == null))))?(((((map__40386.cljs$lang$protocol_mask$partition0$ & (64))) || ((cljs.core.PROTOCOL_SENTINEL === map__40386.cljs$core$ISeq$))))?true:false):false))?cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.hash_map,map__40386):map__40386);
+var posh_tree = map__40386__$1;
+var dcfg = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40386__$1,new cljs.core.Keyword(null,"dcfg","dcfg",-880371016));
+var retrieve = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__40386__$1,new cljs.core.Keyword(null,"retrieve","retrieve",-657129560));
 var vec__40388 = storage_key;
 var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40388,(0),null);
 var poshdb = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__40388,(1),null);

@@ -135,19 +135,19 @@ return result__55137__auto__;
 debux.common.util.send_trace_BANG_(new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"result","result",1415092211),result__55137__auto__,new cljs.core.Keyword(null,"form","form",-1624062471),cljs.core.list(new cljs.core.Keyword("editing","uid","editing/uid",974963040),new cljs.core.Symbol(null,"db","db",-1661185010,null)),new cljs.core.Keyword(null,"indent-level","indent-level",-258835684),(0)], null));
 
 return result__55137__auto__;
-}catch (e66435){var e = e66435;
+}catch (e66437){var e = e66437;
 throw e;
 }}):(function (db,_){
 return new cljs.core.Keyword("editing","uid","editing/uid",974963040).cljs$core$IFn$_invoke$arity$1(db);
 }))], 0));
 re_frame.core.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("editing","is-editing","editing/is-editing",-1509220484),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(function (_){
 return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_frame.core.subscribe.cljs$core$IFn$_invoke$arity$1(new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword("editing","uid","editing/uid",974963040)], null))], null);
-}),(function (p__66438,p__66439){
-var vec__66444 = p__66438;
-var editing_uid = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__66444,(0),null);
-var vec__66447 = p__66439;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__66447,(0),null);
-var uid = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__66447,(1),null);
+}),(function (p__66444,p__66445){
+var vec__66446 = p__66444;
+var editing_uid = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__66446,(0),null);
+var vec__66449 = p__66445;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__66449,(0),null);
+var uid = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__66449,(1),null);
 return cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(editing_uid,uid);
 })], 0));
 re_frame.core.reg_sub.cljs$core$IFn$_invoke$arity$variadic(new cljs.core.Keyword("selected","items","selected/items",1686402211),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(function (db,_){
@@ -177,7 +177,7 @@ return result__55137__auto__;
 debux.common.util.send_trace_BANG_(new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"result","result",1415092211),result__55137__auto__,new cljs.core.Keyword(null,"form","form",-1624062471),cljs.core.list(new cljs.core.Keyword("daily-notes","items","daily-notes/items",227138573),new cljs.core.Symbol(null,"db","db",-1661185010,null)),new cljs.core.Keyword(null,"indent-level","indent-level",-258835684),(0)], null));
 
 return result__55137__auto__;
-}catch (e66460){var e = e66460;
+}catch (e66462){var e = e66462;
 throw e;
 }}):(function (db,_){
 return new cljs.core.Keyword("daily-notes","items","daily-notes/items",227138573).cljs$core$IFn$_invoke$arity$1(db);
