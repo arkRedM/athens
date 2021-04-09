@@ -2,6 +2,7 @@
   (:require
     [athens.db :as db :refer [retract-uid-recursively inc-after dec-after plus-after minus-after]]
     [athens.keybindings :as keybindings]
+    [athens.patterns :as patterns]
     [athens.style :as style]
     [athens.util :refer [now-ts gen-block-uid]]
     [clojure.string :as string]
@@ -45,6 +46,127 @@
   :db/not-synced
   (fn [db [_]]
     (assoc db :db/synced false)))
+
+
+(defn shared-blocks-excl-date-pages
+  [roam-db]
+  (->> (d/q '[:find [?blocks ...]
+              :in $athens $roam
+              :where
+              [$athens _ :block/uid ?blocks]
+              [$roam _ :block/uid ?blocks]
+              [$roam ?e :block/uid ?blocks]
+              [(missing? $roam ?e :node/title)]]
+            @athens.db/dsdb
+            roam-db)))
+
+
+(defn merge-shared-page
+  "If page exists in both databases, but roam-db's page has no children, then do not add the merge block"
+  [shared-page roam-db roam-db-filename]
+  (let [page-athens              (db/get-node-document shared-page)
+        page-roam                (db/get-roam-node-document shared-page roam-db)
+        athens-child-count       (-> page-athens :block/children count)
+        roam-child-count         (-> page-roam :block/children count)
+        new-uid                  (gen-block-uid)
+        today-date-page          (:title (athens.util/get-day))
+        new-children             (conj (:block/children page-athens)
+                                       {:block/string   (str "[[Roam Import]] "
+                                                             "[[" today-date-page "]] "
+                                                             "[[" roam-db-filename "]]")
+                                        :block/uid      new-uid
+                                        :block/children (:block/children page-roam)
+                                        :block/order    athens-child-count
+                                        :block/open     true})
+        merge-pages              (merge page-roam page-athens)
+        final-page-with-children (assoc merge-pages :block/children new-children)]
+    (if (zero? roam-child-count)
+      merge-pages
+      final-page-with-children)))
+
+
+(defn get-shared-pages
+  [roam-db]
+  (->> (d/q '[:find [?pages ...]
+              :in $athens $roam
+              :where
+              [$athens _ :node/title ?pages]
+              [$roam _ :node/title ?pages]]
+            @athens.db/dsdb
+            roam-db)
+       sort))
+
+
+(defn pages
+  [roam-db]
+  (->> (d/q '[:find [?pages ...]
+              :in $
+              :where
+              [_ :node/title ?pages]]
+            roam-db)
+       sort))
+
+
+(defn gett
+  [s x]
+  (not ((set s) x)))
+
+
+(defn not-shared-pages
+  [roam-db shared-pages]
+  (->> (d/q '[:find [?pages ...]
+              :in $ ?fn ?shared
+              :where
+              [_ :node/title ?pages]
+              [(?fn ?shared ?pages)]]
+            roam-db
+            athens.events/gett
+            shared-pages)
+       sort))
+
+
+(defn update-roam-db-dates
+  "Strips the ordinal suffixes of Roam dates from block strings and dates.
+  e.g. January 18th, 2021 -> January 18, 2021"
+  [db]
+  (let [date-pages         (d/q '[:find ?t ?u
+                                  :keys node/title block/uid
+                                  :in $ ?date
+                                  :where
+                                  [?e :node/title ?t]
+                                  [(?date ?t)]
+                                  [?e :block/uid ?u]]
+                                db
+                                patterns/date-block-string)
+        date-block-strings (d/q '[:find ?s ?u
+                                  :keys block/string block/uid
+                                  :in $ ?date
+                                  :where
+                                  [?e :block/string ?s]
+                                  [(?date ?s)]
+                                  [?e :block/uid ?u]]
+                                db
+                                patterns/date-block-string)
+        date-concat        (concat date-pages date-block-strings)
+        tx-data            (map (fn [{:keys [block/string node/title block/uid]}]
+                                  (cond-> {:db/id [:block/uid uid]}
+                                    string (assoc :block/string (patterns/replace-roam-date string))
+                                    title (assoc :node/title (patterns/replace-roam-date title))))
+                                date-concat)]
+    ;;tx-data))
+    (d/db-with db tx-data)))
+
+
+(reg-event-fx
+  :upload/roam-edn
+  (fn [_ [_ transformed-dates-roam-db roam-db-filename]]
+    (let [shared-pages   (get-shared-pages transformed-dates-roam-db)
+          merge-shared   (mapv (fn [x] (merge-shared-page [:node/title x] transformed-dates-roam-db roam-db-filename))
+                               shared-pages)
+          merge-unshared (->> (not-shared-pages transformed-dates-roam-db shared-pages)
+                              (map (fn [x] (db/get-roam-node-document [:node/title x] transformed-dates-roam-db))))
+          tx-data        (concat merge-shared merge-unshared)]
+      {:dispatch [:transact tx-data]})))
 
 
 (reg-event-db
@@ -1062,6 +1184,92 @@
       (unindent-multi uids context-root-uid))))
 
 
+(defn drop-link-child
+  "Create a new block with the reference to the source block, as a child"
+  [source target]
+  (let [new-uid               (gen-block-uid)
+        new-string            (str "((" (source :block/uid) "))")
+        new-source-block      {:block/uid new-uid :block/string new-string :block/order 0 :block/open true}
+        reindex-target-parent (inc-after (:db/id target) -1)
+        new-target-parent     {:db/id (:db/id target) :block/children (conj reindex-target-parent new-source-block)}
+        tx-data               [new-source-block
+                               new-target-parent]]
+    tx-data))
+
+
+(reg-event-fx
+  :drop-link/child
+  (fn [_ [_ source target]]
+    {:dispatch [:transact (drop-link-child source target)]}))
+
+
+(defn drop-link-same-parent
+  "Create a new block with the reference to the source block, under the same parent as the source"
+  [kind source parent target]
+  (let [new-uid             (gen-block-uid)
+        new-string          (str "((" (source :block/uid) "))")
+        s-order             (:block/order source)
+        t-order             (:block/order target)
+        target-above?       (< t-order s-order)
+        +or-                (if target-above? + -)
+        above?                (= kind :above)
+        below?                (= kind :below)
+        lower-bound         (cond
+                              (and above? target-above?) (dec t-order)
+                              (and below? target-above?) t-order
+                              :else s-order)
+        upper-bound         (cond
+                              (and above? (not target-above?)) t-order
+                              (and below? (not target-above?)) (inc t-order)
+                              :else s-order)
+        reindex             (d/q '[:find ?ch ?new-order
+                                   :keys db/id block/order
+                                   :in $ % ?+or- ?parent ?lower-bound ?upper-bound
+                                   :where
+                                   (between ?parent ?lower-bound ?upper-bound ?ch ?order)
+                                   [(?+or- ?order 1) ?new-order]]
+                                 @db/dsdb db/rules +or- (:db/id parent) lower-bound upper-bound)
+        new-source-order    (cond
+                              (and above? target-above?) t-order
+                              (and above? (not target-above?)) (dec t-order)
+                              (and below? target-above?) (inc t-order)
+                              (and below? (not target-above?)) t-order)
+        new-source-block      {:block/uid new-uid :block/string new-string :block/order new-source-order}
+        new-parent-children (concat [new-source-block] reindex)
+        new-parent          {:db/id (:db/id parent) :block/children new-parent-children}
+        tx-data             [new-parent]]
+    tx-data))
+
+
+(reg-event-fx
+  :drop-link/same
+  (fn [_ [_ kind source parent target]]
+    {:dispatch [:transact (drop-link-same-parent kind source parent target)]}))
+
+
+(defn drop-link-diff-parent
+  "Add a link to the source block and reorder the target"
+  [kind source target target-parent]
+  (let [new-uid             (gen-block-uid)
+        new-string          (str "((" (source :block/uid) "))")
+        t-order               (:block/order target)
+        new-block             {:block/uid new-uid :block/string new-string :block/order (if (= kind :above)
+                                                                                          t-order
+                                                                                          (inc t-order))}
+        reindex-target-parent (->> (inc-after (:db/id target-parent) (if (= kind :above)
+                                                                       (dec t-order)
+                                                                       t-order))
+                                   (concat [new-block]))
+        new-target-parent     {:db/id (:db/id target-parent) :block/children reindex-target-parent}]
+    [new-target-parent]))
+
+
+(reg-event-fx
+  :drop-link/diff
+  (fn [_ [_ kind source target target-parent]]
+    {:dispatch [:transact (drop-link-diff-parent kind source target target-parent)]}))
+
+
 (defn drop-child
   "Order will always be 0"
   [source source-parent target]
@@ -1161,23 +1369,26 @@
 
 
 (defn drop-bullet
-  [source-uid target-uid kind]
+  [source-uid target-uid kind effect-allowed]
   (let [source        (db/get-block [:block/uid source-uid])
         target        (db/get-block [:block/uid target-uid])
         source-parent (db/get-parent [:block/uid source-uid])
         target-parent (db/get-parent [:block/uid target-uid])
         same-parent?  (= source-parent target-parent)
         event         (cond
-                        (= kind :child) [:drop/child source source-parent target]
-                        same-parent? [:drop/same kind source source-parent target]
-                        (not same-parent?) [:drop/diff kind source source-parent target target-parent])]
+                        (and (= effect-allowed "move") (= kind :child)) [:drop/child source source-parent target]
+                        (and (= effect-allowed "move") same-parent?) [:drop/same kind source source-parent target]
+                        (and (= effect-allowed "move") (not same-parent?)) [:drop/diff kind source source-parent target target-parent]
+                        (and (= effect-allowed "link") (= kind :child)) [:drop-link/child source target]
+                        (and (= effect-allowed "link") same-parent?) [:drop-link/same kind source source-parent target]
+                        (and (= effect-allowed "link") (not same-parent?)) [:drop-link/diff kind source target target-parent])]
     {:dispatch event}))
 
 
 (reg-event-fx
   :drop
-  (fn [_ [_ source-uid target-uid kind]]
-    (drop-bullet source-uid target-uid kind)))
+  (fn [_ [_ source-uid target-uid kind effect-allowed]]
+    (drop-bullet source-uid target-uid kind effect-allowed)))
 
 
 (defn drop-multi-same-parent-all
@@ -1369,7 +1580,8 @@
 (defn text-to-blocks
   [text uid root-order]
   (let [;; Split raw text by line
-        lines       (clojure.string/split-lines text)
+        lines       (->> (clojure.string/split-lines text)
+                         (filter (comp not clojure.string/blank?)))
         ;; Count left offset
         left-counts (->> lines
                          (map #(re-find #"^\s*(-|\*)?" %))
@@ -1379,10 +1591,18 @@
                          lines)
         ;; Generate blocks with tempids
         blocks      (map-indexed (fn [idx x]
-                                   {:db/id        (dec (* -1 idx))
-                                    :block/string x
-                                    :block/open   true
-                                    :block/uid    (gen-block-uid)}) sanitize)
+                                   (let [h1-re #"^#{1}\s"
+                                         h2-re #"^#{2}\s"
+                                         h3-re #"^#{3}\s"]
+                                     (cond->
+                                       {:db/id        (dec (* -1 idx))
+                                        :block/string x
+                                        :block/open   true
+                                        :block/uid    (gen-block-uid)}
+                                       (re-find h1-re x) (assoc :block/header 1 :block/string (string/replace x h1-re ""))
+                                       (re-find h2-re x) (assoc :block/header 2 :block/string (string/replace x h2-re ""))
+                                       (re-find h3-re x) (assoc :block/header 3 :block/string (string/replace x h3-re "")))))
+                                 sanitize)
         ;; Count blocks
         n           (count blocks)
         ;; Assign parents

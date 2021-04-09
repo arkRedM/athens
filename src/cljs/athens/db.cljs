@@ -251,12 +251,16 @@
 
 
 (def block-document-pull-vector
-  '[:db/id :block/uid :block/string :block/open :block/order {:block/children ...} :block/refs :block/_refs])
+  '[:db/id :block/uid :block/string :block/open :block/order :block/header {:block/children ...} :block/refs :block/_refs])
 
 
 (def node-document-pull-vector
   (-> block-document-pull-vector
       (conj :node/title :page/sidebar)))
+
+
+(def roam-node-document-pull-vector
+  '[:node/title :block/uid :block/string :block/open :block/order {:block/children ...}])
 
 
 (defn get-block-document
@@ -266,8 +270,17 @@
 
 
 (defn get-node-document
-  [id]
-  (->> @(pull dsdb node-document-pull-vector id)
+  ([id]
+   (->> @(pull dsdb node-document-pull-vector id)
+        sort-block-children))
+  ([id db]
+   (->> (d/pull db node-document-pull-vector id)
+        sort-block-children)))
+
+
+(defn get-roam-node-document
+  [id db]
+  (->> (d/pull db roam-node-document-pull-vector id)
        sort-block-children))
 
 
