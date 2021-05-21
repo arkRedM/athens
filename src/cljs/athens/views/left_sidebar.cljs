@@ -156,7 +156,8 @@
     ;; (when @open?
 
       ;; IF EXPANDED
-    [:div (use-style left-sidebar-style {:class (if @open? "is-open" "is-closed")})
+    [:div.left-sidebar
+     (use-style left-sidebar-style {:class (if @open? "is-open" "is-closed")})
      [:div (use-style left-sidebar-content-style {:class (if @open? "is-open" "is-closed")})
 
        ;; SHORTCUTS

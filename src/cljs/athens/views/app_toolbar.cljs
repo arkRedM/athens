@@ -146,7 +146,8 @@
                   :active   @(subscribe [:athena/open])}
           [:<> [:> Search] [:span "Find or Create a Page"]]]]
 
-        [:div (use-style app-header-secondary-controls-style)
+        [:div
+         (use-style app-header-secondary-controls-style)
          (if electron?
            [:<>
             [presence/presence-popover-info]

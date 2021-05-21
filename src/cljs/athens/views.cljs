@@ -4,6 +4,7 @@
     [athens.config]
     [athens.style]
     [athens.subs]
+    [athens.tour.core :as tour-core]
     [athens.views.app-toolbar :as app-toolbar]
     [athens.views.athena :refer [athena-component]]
     [athens.views.devtool :refer [devtool-component]]
@@ -78,6 +79,7 @@
                     :padding "10px 20px"
                     :color "white"}}
            msg]])
+       [tour-core/tour-comp]
        [athena-component]
        (cond
          (and @loading @modal) [filesystem/window]

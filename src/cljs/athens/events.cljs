@@ -195,9 +195,33 @@
 
 
 (reg-event-db
+  :left-sidebar/open
+  (fn [db _]
+    (assoc db :left-sidebar/open true)))
+
+
+(reg-event-db
+  :left-sidebar/close
+  (fn [db _]
+    (assoc db :left-sidebar/open false)))
+
+
+(reg-event-db
   :right-sidebar/toggle
   (fn [db _]
     (update db :right-sidebar/open not)))
+
+
+(reg-event-db
+  :right-sidebar/open
+  (fn [db _]
+    (assoc db :right-sidebar/open true)))
+
+
+(reg-event-db
+  :right-sidebar/close
+  (fn [db _]
+    (assoc db :right-sidebar/open false)))
 
 
 (reg-event-db
